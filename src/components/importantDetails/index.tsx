@@ -16,7 +16,7 @@ function ImportantDetails() {
 
       <div className="mb-6">
         <h3 className="mb-2 text-lg font-semibold">
-          Free Publishing (Corresponding or 1st Author has to be from either of
+          Free Publishing (Corresponding or 2nd Author has to be from either of
           the below given category)
         </h3>
 

@@ -132,7 +132,7 @@ const Home = () => {
     <>
       <Head>
         <title>
-          ICIDLHV- International Conference on Sustainable & Intelligent Computing in Science and Technology
+          ICIDLHV- International Conference on Research Trends of ICT using Digital Libraries with Human Values & Ethics
         </title>
         <link rel="icon" href="/gallery/favicon.ico" />
       </Head>
@@ -149,7 +149,7 @@ const Home = () => {
             </div>
 
             <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold leading-tight">
-              1st International Conference on Sustainable & Intelligent Computing in Science and Technology
+              2nd International Conference on Research Trends of ICT using Digital Libraries with Human Values & Ethics
             </h1>
 
             <div className="flex items-center space-x-2">
@@ -262,7 +262,7 @@ const Home = () => {
               May 16-17, 2026.
               {<br />}
               {<br />}
-              The IC-SICST 2026 conference aims to showcase the recent challenges and their solutions for the development of Sustainable & Intelligent Computing across all areas of science and technology. The International Conference on Sustainable & Intelligent Computing in Science and Technology (IC-SICST 2026) is a premier platform for researchers, academicians, industry professionals, and students to converge and exchange innovative ideas in the fields of sustainable and intelligent computing. This annual event brings together a diverse community of experts to discuss cutting-edge research, emerging trends, and real-world applications in various interdisciplinary areas of science and technology. Our goal for this conference is to gather academic and research contributions from experts working to provide intelligence to their machines and systems.
+              The IC-SICST 2026 conference aims to showcase the recent challenges and their solutions for the development of Sustainable & Intelligent Computing across all areas of science and technology. The International Conference on Research Trends of ICT using Digital Libraries with Human Values & Ethics (IC-SICST 2026) is a premier platform for researchers, academicians, industry professionals, and students to converge and exchange innovative ideas in the fields of sustainable and intelligent computing. This annual event brings together a diverse community of experts to discuss cutting-edge research, emerging trends, and real-world applications in various interdisciplinary areas of science and technology. Our goal for this conference is to gather academic and research contributions from experts working to provide intelligence to their machines and systems.
               {<br />}
               {<br />}
             </p>
@@ -383,7 +383,7 @@ const Home = () => {
                   <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">About Poornima Institute</h2>
                   <p className="mb-6 sm:mb-8 text-justify">
                     Poornima Institute of Engineering and Technology, Jaipur is a premier institution in Engineering Education, established in the academic year 2007. It is affiliated to RTU, Kota and approved by AICTE and it is recognized under UGC 2(f) and  NAAC A Accredited. It is the learning home to a total of 1700 students and is committed to impart best technical skills in students through its six specializations of engineering at UG level.
-                    Being ranked 4th in annual QIV ranking by RTU, Kota. Institute is accredited by NAAC since 2019. PIET is the 1st Institution across India to offer B. Tech CSE in Indian language under NEP 2020. PIET has been sponsored and funded by AICTE for IDEA Lab first in Rajasthan. PIET got overall Diamond rating in QS i-Gauge. PIET is funded for Rs. 1.7 crore in the last five years from various agencies from agencies like TEQIP III, AICTE, NITTTR etc. PIET has been awarded a center of excellence for Advanced Digital Manufacturing by RTU, Kota that facilitates Skill Development, Hands on learning and innovation.
+                    Being ranked 4th in annual QIV ranking by RTU, Kota. Institute is accredited by NAAC since 2019. PIET is the 2nd Institution across India to offer B. Tech CSE in Indian language under NEP 2020. PIET has been sponsored and funded by AICTE for IDEA Lab first in Rajasthan. PIET got overall Diamond rating in QS i-Gauge. PIET is funded for Rs. 1.7 crore in the last five years from various agencies from agencies like TEQIP III, AICTE, NITTTR etc. PIET has been awarded a center of excellence for Advanced Digital Manufacturing by RTU, Kota that facilitates Skill Development, Hands on learning and innovation.
                   </p>
                 </div>
               </div>
@@ -410,7 +410,7 @@ const Home = () => {
           <div className="max-w-4xl mx-auto">
             <h1 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-center">About Conference</h1>
             <h2 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-center">
-              1st International Conference on Sustainable &amp; Intelligent Computing in Science and Technology (IC-SICST 2026)
+              2nd International Conference on Sustainable &amp; Intelligent Computing in Science and Technology (IC-SICST 2026)
             </h2>
             <p className="mb-6 sm:mb-8 text-justify text-sm sm:text-base">
               The IC-SICST 2026 conference aims to showcase the recent challenges and their solutions for the development of Sustainable &amp; Intelligent Computing across all areas of science and technology. The International Conference on Sustainable &amp; Intelligent Computing in Science and Technology (IC-SICST 2026) is a premier platform for researchers, academicians, industry professionals, and students to converge and exchange innovative ideas in the fields of sustainable and intelligent computing. This annual event brings together a diverse community of experts to discuss cutting-edge research, emerging trends, and real-world applications in various interdisciplinary areas of science and technology. Our goal for this conference is to gather academic and research contributions from experts working to provide intelligence to their machines and systems.

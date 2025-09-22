@@ -194,7 +194,7 @@ function Index() {
                   ICIDLHV2026
                 </span>
                 <span className="text-sm text-gray-300">
-                  International Conference on Sustainable & Intelligent Computing in Science and Technology
+                  International Conference on Research Trends of ICT using Digital Libraries with Human Values & Ethics
                 </span>
               </div>
             </Link>

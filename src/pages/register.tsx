@@ -10,7 +10,7 @@ const Register = () => {
     <>
       <Head>
         <title>
-          Register - ICIDLHV- International Conference on Sustainable & Intelligent Computing in Science and Technology
+          Register - ICIDLHV- International Conference on Research Trends of ICT using Digital Libraries with Human Values & Ethics
         </title>
         <link rel="icon" href="/gallery/favicon.ico" />
       </Head>
