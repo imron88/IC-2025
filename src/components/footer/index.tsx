@@ -39,7 +39,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#071952] text-white text-sm">
+    <footer className="bg-primary-600 text-white text-sm">
       <div className="mx-auto max-w-7xl px-3 py-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
           {/* Logo and Description */}
@@ -54,15 +54,15 @@ const Footer = () => {
               />
               <div>
                 <h2 className="text-lg font-bold">ICIDLHV2026</h2>
-                <p className="text-xs text-gray-300">
+                <p className="text-xs text-secondary-200">
                   International Conference on Sustainable & Intelligent Computing
                 </p>
               </div>
             </Link>
-            <p className="text-gray-300 text-xs">
+            <p className="text-secondary-200 text-xs">
             The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
             </p>
-            <p className="text-gray-300 text-xs">
+            <p className="text-secondary-200 text-xs">
               Join us for the 2nd International Conference on Sustainable & Intelligent Computing 
               in Science and Technology at PIET.
             </p>
@@ -73,21 +73,21 @@ const Footer = () => {
             <h3 className="font-semibold">Contact Information</h3>
             <div className="space-y-3 text-xs">
               <div className="flex items-start space-x-2">
-                <RiMapPin2Fill className="text-gray-400 mt-1 flex-shrink-0" />
-                <p className="text-gray-300">
+                <RiMapPin2Fill className="text-secondary-300 mt-1 flex-shrink-0" />
+                <p className="text-secondary-200">
                   Department Of Applied Sciences, PIET, Jaipur, Rajasthan
                 </p>
               </div>
               <div className="flex items-center space-x-2">
-                <RiPhoneFill className="text-gray-400" />
-                <a href="tel:+91-9896017351" className="text-gray-300 hover:text-white">
+                <RiPhoneFill className="text-secondary-300" />
+                <a href="tel:+91-9896017351" className="text-secondary-200 hover:text-white">
                   +91-8118874724
                 </a>
               </div>
               <div className="flex items-center space-x-2">
-                <RiGlobalLine className="text-gray-400" />
+                <RiGlobalLine className="text-secondary-300" />
                 <a href="https://www.piet.poornima.org" 
-                   className="text-gray-300 hover:text-white">
+                   className="text-secondary-200 hover:text-white">
                   www.piet.poornima.org
                 </a>
               </div>
@@ -106,10 +106,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <hr className="border-gray-800 my-4" />
+        <hr className="border-accent-600 my-4" />
 
         <div className="flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0">
-          <div className="text-xs text-gray-400">
+          <div className="text-xs text-secondary-300">
             <p>© 2026 ICSICST. All rights reserved.</p>
             <p className="mt-1">
               Created by{" "}
@@ -119,7 +119,7 @@ const Footer = () => {
                 <React.Fragment key={dev.name}>
                   <a
                     href={dev.href}
-                    className="text-gray-300 hover:text-white"
+                    className="text-secondary-200 hover:text-white"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -136,7 +136,7 @@ const Footer = () => {
               <Link 
                 key={social.label}
                 href={social.href}
-                className={`text-xl text-gray-400 ${social.hoverColor}`}
+                className={`text-xl text-secondary-300 ${social.hoverColor}`}
                 aria-label={social.label}
               >
                 <social.icon className="hover:scale-110 transition-transform" />

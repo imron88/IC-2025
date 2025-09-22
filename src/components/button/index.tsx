@@ -12,7 +12,7 @@ export default function Button({
         <div>
             <button disabled={disabled}>
                 <Link href={link}
-                    className={`inline-flex items-center justify-center px-5 py-2 mr-3 text-base font-medium text-center text-white rounded-lg ${className ? className : "bg-red-700 hover:bg-[#1a1212] focus:ring-4 focus:ring-red-300 no-underline dark:focus:ring-red-900"}`}>
+                    className={`inline-flex items-center justify-center px-5 py-2 mr-3 text-base font-medium text-center text-white rounded-lg ${className ? className : "bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-300 no-underline dark:focus:ring-primary-400"}`}>
                     {children}
 
                     {!hideIcon &&

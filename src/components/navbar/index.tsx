@@ -50,16 +50,16 @@ const Dropdown = ({
       {dropOpen && (
         <div
           id="dropNav"
-          className={`-left-1/2 z-10 mt-3 w-full divide-y divide-amber-800 rounded bg-amber-100 font-normal shadow-lg md:absolute ${title.toLowerCase().includes("archive") ? "md:w-36" : "md:w-52"
+          className={`-left-1/2 z-10 mt-3 w-full divide-y divide-primary-600 rounded bg-secondary-100 font-normal shadow-lg md:absolute ${title.toLowerCase().includes("archive") ? "md:w-36" : "md:w-52"
             }`}
         >
-          <ul className="w-full py-2 text-sm font-semibold text-gray-700">
+          <ul className="w-full py-2 text-sm font-semibold text-text-primary">
             {dropdown.map((item, index) => {
               return (
                 <li key={index}>
                   <Link
                     href={item.link}
-                    className="block px-4 py-2 hover:bg-amber-200"
+                    className="block px-4 py-2 hover:bg-secondary-200"
                   >
                     {item.title}
                   </Link>
@@ -175,7 +175,7 @@ function Index() {
 
   return (
     <div className="sticky top-0 z-50">
-      <nav className="bg-[#071952] shadow-lg">
+      <nav className="bg-primary-600 shadow-lg">
         <div className="mx-auto max-w-screen-xl flex-wrap items-center justify-between p-4">
           <div className="flex items-center justify-between w-full">
             <Link href="/" className="flex items-center space-x-4">
@@ -193,7 +193,7 @@ function Index() {
                 <span className="text-2xl font-bold text-white">
                   ICIDLHV2026
                 </span>
-                <span className="text-sm text-gray-300">
+                <span className="text-sm text-secondary-200">
                   International Conference on Research Trends of ICT using Digital Libraries with Human Values & Ethics
                 </span>
               </div>
@@ -212,7 +212,7 @@ function Index() {
             {/* Mobile menu button */}
             <button
               onClick={menuToggle}
-              className="inline-flex items-center p-2 text-white hover:bg-blue-900 rounded-lg md:hidden"
+              className="inline-flex items-center p-2 text-white hover:bg-primary-700 rounded-lg md:hidden"
             >
               <svg
                 className="h-6 w-6"
@@ -237,7 +237,7 @@ function Index() {
                   <li key={index} className="group">
                     <Link 
                       href={link.link}
-                      className="text-gray-300 hover:text-white transition-colors duration-200 text-sm uppercase tracking-wider"
+                      className="text-secondary-200 hover:text-white transition-colors duration-200 text-sm uppercase tracking-wider"
                       onClick={closeMenu}
                     >
                       {link.title}

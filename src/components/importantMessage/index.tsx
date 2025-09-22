@@ -30,42 +30,42 @@ export default function ImportantMessage() {
     return (
         <div className={"w-full lg:w-min-sm"}>
 
-            <div className={"mt-5 p-4 rounded-t-md bg-gray-200 border-l-4 border-red-600 w-full lg:max-w-sm"}>
-                <p className={"font-semibold text-lg"}>Important Notices</p>
+            <div className={"mt-5 p-4 rounded-t-md bg-secondary-200 border-l-4 border-primary-500 w-full lg:max-w-sm"}>
+                <p className={"font-semibold text-lg text-text-primary"}>Important Notices</p>
             </div>
             <div
-                className={"p-4 rounded-b-md bg-gray-100 w-full lg:max-w-sm lg:max-h-80 lg:overflow-y-auto overflow-x-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-thumb-rounded-md scrollbar-track-gray-200"}>
+                className={"p-4 rounded-b-md bg-secondary-100 w-full lg:max-w-sm lg:max-h-80 lg:overflow-y-auto overflow-x-auto scrollbar-thin scrollbar-thumb-secondary-400 scrollbar-thumb-rounded-md scrollbar-track-secondary-200"}>
                 {
                     impImpData.map((item, index) => {
                         return (
                             <a href={item.link} key={index} className={"cursor-pointer"}>
                                 <div
-                                    className={`flex flex-col space-x-2 items-start ${item.isImportant ? "-mx-4 -my-5 p-4 bg-orange-100" : ""}`}>
+                                    className={`flex flex-col space-x-2 items-start ${item.isImportant ? "-mx-4 -my-5 p-4 bg-accent-100" : ""}`}>
                                     <div>
                                         <div className={"flex space-x-2 mt-2"}>
-                                            <p className={`font-medium ${item.isImportant ? "text-orange-800" : ""}`}>{item.title}</p>
+                                            <p className={`font-medium ${item.isImportant ? "text-accent-700" : "text-text-primary"}`}>{item.title}</p>
                                             {index === 0 && !item.isImportant &&
-                                                <div className={"rounded-full bg--800 font-semibold bg-opacity-20"}>
-                                                    <p className={"px-2 py-0.5 text-sm text-blue-800"}>New</p>
+                                                <div className={"rounded-full bg-accent-500 font-semibold bg-opacity-20"}>
+                                                    <p className={"px-2 py-0.5 text-sm text-accent-700"}>New</p>
                                                 </div>
                                             }
                                             {item.isImportant &&
                                                 <div className={"flex space-x-2 items-center justify-center"}>
                                                     <div
-                                                        className={"rounded-full bg-orange-800 font-semibold bg-opacity-20"}>
-                                                        <p className={"px-2 py-0.5 text-xs text-orange-800"}>Important</p>
+                                                        className={"rounded-full bg-accent-600 font-semibold bg-opacity-20"}>
+                                                        <p className={"px-2 py-0.5 text-xs text-accent-700"}>Important</p>
                                                     </div>
                                                 </div>
                                             }
                                         </div>
 
-                                        <p className={`font-light text-sm mt-1 ${item.isImportant ? "text-orange-800" : ""}`}>{item?.description}</p>
+                                        <p className={`font-light text-sm mt-1 ${item.isImportant ? "text-accent-700" : "text-text-secondary"}`}>{item?.description}</p>
                                     </div>
 
 
                                 </div>
                                 {index !== impImpData.length - 1 &&
-                                    <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700" />
+                                    <hr className="h-px my-5 bg-secondary-300 border-0 dark:bg-secondary-400" />
                                 }
                             </a>
                         )

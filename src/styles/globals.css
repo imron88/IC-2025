@@ -7,7 +7,7 @@
 @layer components {
 
     .heading {
-        @apply border-l-4 border-[#034EA2] px-4
+        @apply border-l-4 border-primary-500 px-4
     }
 
     .grow-on-hover {
@@ -36,10 +36,10 @@
 }
 
 .swiper-pagination-bullet {
-    @apply bg-amber-100 !important;
+    @apply bg-secondary-200 !important;
     opacity: 100% !important;
 }
 
 .swiper-pagination-bullet-active {
-    @apply bg-amber-400 !important;
+    @apply bg-primary-500 !important;
 }

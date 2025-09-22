@@ -140,27 +140,27 @@ const Home = () => {
       <br/>
 
       {/* Hero Section */}
-      <main className="bg-gradient-to-b from-blue-50 to-white px-4 sm:px-6 lg:px-8">
+      <main className="bg-gradient-to-b from-background-primary to-white px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-5 items-center gap-5 py-4 sm:py-6 lg:py-8">
           <div className="col-span-full lg:col-span-2 space-y-4 sm:space-y-6">
-            <div className="flex items-center space-x-2 bg-blue-50 px-3 sm:px-4 py-2 rounded-full w-fit">
-              <RiCalendarTodoFill className="text-lg sm:text-xl text-[#034EA2]" />
-              <p className="font-semibold text-[#034EA2] text-sm sm:text-base">16th & 17th May, 2026</p>
+            <div className="flex items-center space-x-2 bg-secondary-100 px-3 sm:px-4 py-2 rounded-full w-fit">
+              <RiCalendarTodoFill className="text-lg sm:text-xl text-primary-600" />
+              <p className="font-semibold text-primary-600 text-sm sm:text-base">16th & 17th May, 2026</p>
             </div>
 
-            <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold leading-tight">
+            <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold leading-tight text-text-primary">
               2nd International Conference on Research Trends of ICT using Digital Libraries with Human Values & Ethics
             </h1>
 
             <div className="flex items-center space-x-2">
-              <RiMapPin2Fill className="text-lg sm:text-xl text-[#034EA2]" />
-              <div className="text-[#034EA2]">
+              <RiMapPin2Fill className="text-lg sm:text-xl text-primary-600" />
+              <div className="text-primary-600">
                 <p className="font-semibold text-sm sm:text-base">Poornima Institute of Engineering and technology</p>
                 <p className="text-xs sm:text-sm">Sitapura Jaipur, Rajasthan</p>
               </div>
             </div>
 
-            <div className="flex space-x-3 sm:space-x-5 text-xl sm:text-2xl text-[#034EA2]">
+            <div className="flex space-x-3 sm:space-x-5 text-xl sm:text-2xl text-primary-600">
               {/* <Link
                 href={"https://www.piet.poornima.org/"}
                 aria-label={"icimmi twitter"}
@@ -253,8 +253,8 @@ const Home = () => {
 
         {/* Preamble Section */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
-          <div className="lg:col-span-2 prose prose-sm sm:prose-base lg:prose-lg max-w-none">
-            <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">About Conference</h2>
+          <div className="lg:col-span-2 prose prose-sm sm:prose-base lg:prose-lg max-w-none text-text-primary">
+            <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-text-primary">About Conference</h2>
             <p className="text-justify">
               International Conference on Sustainable &amp; Intelligent Computing in Science and Technology
               (ICIDLHV2026) will be held at Poornima Institute
@@ -269,8 +269,8 @@ const Home = () => {
             <hr className="my-6 sm:my-8 h-px border-0 bg-gray-200 dark:bg-gray-700" />
           </div>
 
-          <div className="bg-white rounded-xl shadow-md p-4 sm:p-6">
-            <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Publication Partners</h2>
+          <div className="bg-background-primary rounded-xl shadow-md p-4 sm:p-6">
+            <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-text-primary">Publication Partners</h2>
             <div className="col-span-full flex h-[250px] sm:h-[300px] w-full overflow-hidden rounded-lg px-1 lg:col-span-3">
               <Carousel
                 autoPlay={true}
@@ -286,8 +286,8 @@ const Home = () => {
                           <div
                             key={index}
                             className={`${
-                              index == activeIndex ? "bg-amber-400" : "bg-white"
-                            } h-2.5 sm:h-3 w-2.5 sm:w-3 cursor-pointer rounded-full transition duration-300 ease-in-out hover:bg-red-600`}
+                              index == activeIndex ? "bg-primary-500" : "bg-white"
+                            } h-2.5 sm:h-3 w-2.5 sm:w-3 cursor-pointer rounded-full transition duration-300 ease-in-out hover:bg-primary-400`}
                             onClick={() => setActiveIndex(index)}
                           ></div>
                         );
@@ -323,7 +323,7 @@ const Home = () => {
           <div className="container flex flex-col md:flex-row-reverse gap-6 sm:gap-8">
             <div className="md:w-3/4">
               <div className="space-y-4 sm:space-y-6">
-                <h2 className="text-xl sm:text-2xl font-bold">Objectives</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-text-primary">Objectives</h2>
                 <p className="mb-6 sm:mb-8 text-justify">
                   The main objective of this conference is to provide a platform
                   for researchers, academicians, industry professionals, and
@@ -366,21 +366,21 @@ const Home = () => {
               
               <div className="mt-8 sm:mt-12 space-y-6 sm:space-y-8">
                 <div>
-                  <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">About Rajasthan</h2>
+                  <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-text-primary">About Rajasthan</h2>
                   <p className="mb-6 sm:mb-8 text-justify">
                     Rajasthan is the largest state of India by an area 3,42,239 sq km. It encompasses most of the area of the large, inhospitable Great Indian Desert (Thar Desert), which has an edge paralleling the Sutlej-Indus River valley along its border with Pakistan. The state has borders with Pakistan to the west, Gujrat to the southwest, Madhya Pradesh to the southeast, Uttar Pradesh &amp; Haryana to the northeast &amp; Punjab to the north. The glory of the state is retained by its majestic places, forts, monuments, vibrant culture, and rich heritage which draw innumerable tourists from across the globe.
                   </p>
                 </div>
 
                 <div>
-                  <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">About Jaipur</h2>
+                  <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-text-primary">About Jaipur</h2>
                   <p className="mb-6 sm:mb-8 text-justify">
                     Jaipur (Pink City of India), the capital of Rajasthan state in India, was founded in 1727 by Maharaj Sawai Jai Singh. It is an enormously admired tourist destination in Rajasthan and India. Its features of beautiful Architecture, Town Planning, Arts and Crafts, Culture, tourism have endowed it with uniqueness in India&apos;s urban character. Jaipur being capital of Rajasthan and one of the important cities of Golden Triangle is the focus of the socio-economic and political center of the State. Jaipur is an expression of the astronomical skills, living traditions, unique urban form and exemplary foresighted city planning of an 18th century city from India.
                   </p>
                 </div>
 
                 <div>
-                  <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">About Poornima Institute</h2>
+                  <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-text-primary">About Poornima Institute</h2>
                   <p className="mb-6 sm:mb-8 text-justify">
                     Poornima Institute of Engineering and Technology, Jaipur is a premier institution in Engineering Education, established in the academic year 2007. It is affiliated to RTU, Kota and approved by AICTE and it is recognized under UGC 2(f) and  NAAC A Accredited. It is the learning home to a total of 1700 students and is committed to impart best technical skills in students through its six specializations of engineering at UG level.
                     Being ranked 4th in annual QIV ranking by RTU, Kota. Institute is accredited by NAAC since 2019. PIET is the 2nd Institution across India to offer B. Tech CSE in Indian language under NEP 2020. PIET has been sponsored and funded by AICTE for IDEA Lab first in Rajasthan. PIET got overall Diamond rating in QS i-Gauge. PIET is funded for Rs. 1.7 crore in the last five years from various agencies from agencies like TEQIP III, AICTE, NITTTR etc. PIET has been awarded a center of excellence for Advanced Digital Manufacturing by RTU, Kota that facilitates Skill Development, Hands on learning and innovation.
@@ -419,8 +419,8 @@ const Home = () => {
         </section> */}
 
         {/* Visitor Counter */}
-        <div className="bg-blue-50 rounded-xl p-4 sm:p-8 text-center my-8 sm:my-12">
-          <div className="text-3xl sm:text-5xl font-bold text-[#034EA2] mb-2 sm:mb-4">
+        <div className="bg-secondary-100 rounded-xl p-4 sm:p-8 text-center my-8 sm:my-12">
+          <div className="text-3xl sm:text-5xl font-bold text-primary-600 mb-2 sm:mb-4">
             <AnimatedNumbers
               includeComma
               animateToNumber={visitorCounter}
@@ -435,7 +435,7 @@ const Home = () => {
               ]}
             />
           </div>
-          <p className="text-lg sm:text-xl font-semibold text-gray-700">Visitors</p>
+          <p className="text-lg sm:text-xl font-semibold text-text-primary">Visitors</p>
         </div>
 
         <hr className="my-6 sm:my-8 h-px border-0 bg-gray-200" />
@@ -444,7 +444,7 @@ const Home = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 my-8 sm:my-12">
           {counterData.map((item, index) => (
             <div key={index} 
-                 className="bg-white rounded-xl shadow-md p-4 sm:p-6 text-center transform hover:scale-105 transition-all duration-300">
+                 className="bg-background-primary rounded-xl shadow-md p-4 sm:p-6 text-center transform hover:scale-105 transition-all duration-300">
               <AnimatedNumbers
                 animateToNumber={item.maxCount}
                 locale="en-US"
@@ -457,7 +457,7 @@ const Home = () => {
                   { mass: 1, tension: 210, friction: 180 },
                 ]}
               />
-              <p className="mt-2 text-gray-600 font-medium text-sm sm:text-base">{item.subTitle}</p>
+              <p className="mt-2 text-text-secondary font-medium text-sm sm:text-base">{item.subTitle}</p>
             </div>
           ))}
         </div>

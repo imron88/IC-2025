@@ -14,19 +14,19 @@ const Speakers = () => {
       <Schedule />
       <br />
 
-      <main className="bg-gradient-to-b from-blue-50 to-white px-4 sm:px-6 lg:px-8 min-h-screen pt-7">
+      <main className="bg-gradient-to-b from-background-primary to-white px-4 sm:px-6 lg:px-8 min-h-screen pt-7">
         <div className="max-w-7xl mx-auto">
-          <div className="bg-white rounded-lg sm:rounded-xl shadow-md p-4 sm:p-6 lg:p-8 mb-4 sm:mb-6 lg:mb-8">
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-6 sm:mb-8 lg:mb-12">
+          <div className="bg-background-primary rounded-lg sm:rounded-xl shadow-md p-4 sm:p-6 lg:p-8 mb-4 sm:mb-6 lg:mb-8">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-6 sm:mb-8 lg:mb-12 text-text-primary">
              Proposed Keynote Speakers
-              <div className="h-1 w-16 sm:w-20 lg:w-24 bg-blue-600 mx-auto mt-2 sm:mt-3 lg:mt-4 rounded-full"></div>
+              <div className="h-1 w-16 sm:w-20 lg:w-24 bg-primary-500 mx-auto mt-2 sm:mt-3 lg:mt-4 rounded-full"></div>
             </h1>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
               {speakers.map((speaker, index) => (
                 <div 
                   key={index}
-                  className="group bg-white rounded-lg sm:rounded-xl shadow-md sm:shadow-lg overflow-hidden transform hover:-translate-y-1 transition-all duration-300"
+                  className="group bg-background-primary rounded-lg sm:rounded-xl shadow-md sm:shadow-lg overflow-hidden transform hover:-translate-y-1 transition-all duration-300"
                 >
                   <div className="relative w-full h-[250px] sm:h-[300px] lg:h-[400px] bg-gray-100">
                     <Image
@@ -42,14 +42,14 @@ const Speakers = () => {
                     
                     <div className="absolute bottom-2 sm:bottom-3 lg:bottom-4 left-2 sm:left-3 lg:left-4 transform translate-y-4 transition-all duration-300">
                       {!speaker.national ? (
-                        <div className="inline-block bg-blue-100 bg-opacity-90 backdrop-blur-sm rounded-full px-3 sm:px-4 py-1.5 sm:py-2 mb-2">
-                          <p className="text-xs sm:text-sm font-medium text-blue-800">
+                        <div className="inline-block bg-secondary-200 bg-opacity-90 backdrop-blur-sm rounded-full px-3 sm:px-4 py-1.5 sm:py-2 mb-2">
+                          <p className="text-xs sm:text-sm font-medium text-primary-700">
                             International Speaker
                           </p>
                         </div>
                       ) : (
                         <div className="inline-block bg-white bg-opacity-90 backdrop-blur-sm rounded-full px-3 sm:px-4 py-1.5 sm:py-2 mb-2">
-                          <p className="text-xs sm:text-sm font-medium text-[#034EA2]">
+                          <p className="text-xs sm:text-sm font-medium text-primary-600">
                             National Speaker
                           </p>
                         </div>
@@ -58,10 +58,10 @@ const Speakers = () => {
                   </div>
                   
                   <div className="p-4 sm:p-5 lg:p-6">
-                    <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-1 sm:mb-2">
+                    <h3 className="text-lg sm:text-xl font-bold text-text-primary mb-1 sm:mb-2">
                       {speaker.name}
                     </h3>
-                    <p className="text-xs sm:text-sm text-gray-600 line-clamp-3">
+                    <p className="text-xs sm:text-sm text-text-secondary line-clamp-3">
                       {speaker.designation}
                     </p>
                   </div>
@@ -71,9 +71,9 @@ const Speakers = () => {
 
             {speakers.length === 0 && (
               <div className="flex flex-col items-center justify-center min-h-[300px] sm:min-h-[350px] lg:min-h-[400px] text-center">
-                <div className="bg-blue-50 rounded-full p-6 sm:p-7 lg:p-8 mb-4 sm:mb-5 lg:mb-6">
+                <div className="bg-secondary-100 rounded-full p-6 sm:p-7 lg:p-8 mb-4 sm:mb-5 lg:mb-6">
                   <svg 
-                    className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 text-blue-500" 
+                    className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 text-primary-500" 
                     fill="none" 
                     stroke="currentColor" 
                     viewBox="0 0 24 24" 
@@ -87,10 +87,10 @@ const Speakers = () => {
                     />
                   </svg>
                 </div>
-                <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3 lg:mb-4">
+                <h2 className="text-xl sm:text-2xl font-bold text-text-primary mb-2 sm:mb-3 lg:mb-4">
                   Speakers Coming Soon
                 </h2>
-                <p className="text-base sm:text-lg text-gray-600 max-w-xl sm:max-w-2xl px-4">
+                <p className="text-base sm:text-lg text-text-secondary max-w-xl sm:max-w-2xl px-4">
                   We are currently finalizing our lineup of distinguished speakers. 
                   Check back soon to learn about the experts who will be sharing their insights.
                 </p>

@@ -20,11 +20,11 @@ const callForPapers = () => {
       <Schedule />
       <br />
 
-      <main className="bg-gradient-to-b from-blue-50 to-white px-4 sm:px-6 lg:px-8 pt-7">
+      <main className="bg-gradient-to-b from-background-primary to-white px-4 sm:px-6 lg:px-8 pt-7">
         {/* Call for Papers Section */}
-        <div className="bg-white rounded-xl shadow-md p-4 sm:p-6 lg:p-8 mb-4 sm:mb-6 lg:mb-8">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">Call for Papers</h1>
-          <p className="text-sm sm:text-base lg:text-lg text-gray-700 mb-6 sm:mb-8">
+        <div className="bg-background-primary rounded-xl shadow-md p-4 sm:p-6 lg:p-8 mb-4 sm:mb-6 lg:mb-8">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 text-text-primary">Call for Papers</h1>
+          <p className="text-sm sm:text-base lg:text-lg text-text-secondary mb-6 sm:mb-8">
             Prospective authors from academia as well as industry are invited to
             submit their full papers in main conference ICSICST-2026 which have not
             been yet submitted published and that illustrate research, surveying
@@ -37,7 +37,7 @@ const callForPapers = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
   {/* Block 1: Sustainable Computing */}
   <div>
-    <h1 className="text-2xl">Intelligent Systems:</h1>
+    <h1 className="text-2xl text-text-primary">Intelligent Systems:</h1>
     <div className="space-y-2 mt-2">
       {[
         "Artificial Intelligence & Machine Learning",
@@ -47,8 +47,8 @@ const callForPapers = () => {
         "Internet of Things (IoT) and smart systems"
       ].map((item, index) => (
         <div key={index} className="flex items-start space-x-2">
-          <div className="mt-1.5 h-2 w-2 rounded-full bg-blue-500 flex-shrink-0" />
-          <p className="text-sm sm:text-base text-gray-700">{item}</p>
+          <div className="mt-1.5 h-2 w-2 rounded-full bg-primary-500 flex-shrink-0" />
+          <p className="text-sm sm:text-base text-text-secondary">{item}</p>
         </div>
       ))}
     </div>
@@ -56,7 +56,7 @@ const callForPapers = () => {
 
   {/* Block 2: Intelligent Computing */}
   <div>
-    <h1 className="text-2xl">Sustainable Computing:</h1>
+    <h1 className="text-2xl text-text-primary">Sustainable Computing:</h1>
     <div className="space-y-2 mt-2">
       {[
         "Complex systems: modelling and simulation",
@@ -66,8 +66,8 @@ const callForPapers = () => {
         "Responsible & Re-usable Computing"
       ].map((item, index) => (
         <div key={index} className="flex items-start space-x-2">
-          <div className="mt-1.5 h-2 w-2 rounded-full bg-blue-500 flex-shrink-0" />
-          <p className="text-sm sm:text-base text-gray-700">{item}</p>
+          <div className="mt-1.5 h-2 w-2 rounded-full bg-primary-500 flex-shrink-0" />
+          <p className="text-sm sm:text-base text-text-secondary">{item}</p>
         </div>
       ))}
     </div>
@@ -75,7 +75,7 @@ const callForPapers = () => {
 
   {/* Block 3: Embedded Systems And VLSI Designing */}
   <div>
-    <h1 className="text-2xl">Advancements in Science and Engineering:</h1>
+    <h1 className="text-2xl text-text-primary">Advancements in Science and Engineering:</h1>
     <div className="space-y-2 mt-2">
       {[
         "Quantum Computing",
@@ -85,8 +85,8 @@ const callForPapers = () => {
         "Semiconductor Technology"
       ].map((item, index) => (
         <div key={index} className="flex items-start space-x-2">
-          <div className="mt-1.5 h-2 w-2 rounded-full bg-blue-500 flex-shrink-0" />
-          <p className="text-sm sm:text-base text-gray-700">{item}</p>
+          <div className="mt-1.5 h-2 w-2 rounded-full bg-primary-500 flex-shrink-0" />
+          <p className="text-sm sm:text-base text-text-secondary">{item}</p>
         </div>
       ))}
     </div>
@@ -94,7 +94,7 @@ const callForPapers = () => {
 
   {/* Block 4: Engineering Materials */}
   <div>
-    <h1 className="text-2xl">Emerging Material Science:</h1>
+    <h1 className="text-2xl text-text-primary">Emerging Material Science:</h1>
     <div className="space-y-2 mt-2">
       {[
         "Nanomaterials",
@@ -104,16 +104,16 @@ const callForPapers = () => {
         "Computational Material Science"
       ].map((item, index) => (
         <div key={index} className="flex items-start space-x-2">
-          <div className="mt-1.5 h-2 w-2 rounded-full bg-blue-500 flex-shrink-0" />
-          <p className="text-sm sm:text-base text-gray-700">{item}</p>
+          <div className="mt-1.5 h-2 w-2 rounded-full bg-primary-500 flex-shrink-0" />
+          <p className="text-sm sm:text-base text-text-secondary">{item}</p>
         </div>
       ))}
     </div>
   </div>
 </div>
 
-            <div className="bg-blue-50 rounded-lg p-4 sm:p-6 mt-6">
-              <p className="text-sm sm:text-base lg:text-lg text-gray-700">
+            <div className="bg-secondary-100 rounded-lg p-4 sm:p-6 mt-6">
+              <p className="text-sm sm:text-base lg:text-lg text-text-secondary">
                 <span className="font-bold">Note: </span>
                 Session wise " Best Paper Award " along with certificates to all the authors.
               </p>
@@ -121,8 +121,8 @@ const callForPapers = () => {
         </div>
 
         {/* Why Attend Section */}
-        <div className="bg-white rounded-xl shadow-md p-4 sm:p-6 lg:p-8 mb-4 sm:mb-6 lg:mb-8">
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 sm:mb-6">Why Attend IC-SICST 2026?</h2>
+        <div className="bg-background-primary rounded-xl shadow-md p-4 sm:p-6 lg:p-8 mb-4 sm:mb-6 lg:mb-8">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 sm:mb-6 text-text-primary">Why Attend IC-SICST 2026?</h2>
           <div className="space-y-3 sm:space-y-4">
             {[
               "Network with Experts: Connect with leading researchers, industry professionals, and academicians from around the world.",
@@ -132,8 +132,8 @@ const callForPapers = () => {
               "Foster Collaboration: Collaborate with like-minded individuals to drive innovation and solve real-world problems.",
             ].map((item, index) => (
               <div key={index} className="flex items-start space-x-3">
-                <div className="mt-1.5 h-2 w-2 rounded-full bg-blue-500 flex-shrink-0" />
-                <p className="text-sm sm:text-base text-gray-700">{item}</p>
+                <div className="mt-1.5 h-2 w-2 rounded-full bg-primary-500 flex-shrink-0" />
+                <p className="text-sm sm:text-base text-text-secondary">{item}</p>
               </div>
             ))}
           </div>
