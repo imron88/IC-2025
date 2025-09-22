@@ -1,4 +1,4 @@
-# IC-SICST Website
+# IC Website
 
 This repository contains the code for the IC-SICST (International Conference on Research Trends of ICT using Digital Libraries with Human Values & Ethics) website. The website is built using Next.js and styled with Tailwind CSS.
 
