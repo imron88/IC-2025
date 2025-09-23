@@ -160,13 +160,13 @@ function Index() {
   return (
     <>
       {/* Top Header Bar */}
-      <div className="bg-gradient-to-r from-primary-600 to-primary-700 text-white py-2 px-4">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center text-sm">
-          <div className="flex items-center space-x-4 mb-2 sm:mb-0">
+      <div className="bg-gradient-to-r from-primary-600 to-primary-700 text-white py-1.5 px-2 sm:py-2 sm:px-4">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm">
+          <div className="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-4 mb-1 sm:mb-0">
             <span className="text-secondary-200">📧 icsicst@poornima.org</span>
             <span className="text-secondary-200">📞 +91-8118874724</span>
           </div>
-          <div className="flex items-center space-x-2">
+          <div className="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-2">
             <span className="text-secondary-200">📅 May 16-17, 2026</span>
             <span className="text-secondary-200">📍 Jaipur, Rajasthan, India</span>
           </div>
@@ -175,12 +175,12 @@ function Index() {
 
       {/* Main Navigation */}
       <div className="sticky top-0 z-50 bg-white shadow-lg border-b border-gray-200">
-        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6 xl:px-8">
           {/* Top Header Section */}
-          <div className="flex items-center justify-between h-20 border-b border-gray-100">
+          <div className="flex items-center justify-between h-16 sm:h-18 lg:h-20 border-b border-gray-100">
             {/* Logo and Conference Title */}
-            <Link href="/" className="flex items-center space-x-4 flex-shrink-0">
-              <div className="h-12 w-12 sm:h-14 sm:w-14">
+            <Link href="/" className="flex items-center space-x-2 sm:space-x-3 lg:space-x-4 flex-shrink-0 min-w-0">
+              <div className="h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14 flex-shrink-0">
                 <Image
                   width={56}
                   height={56}
@@ -191,26 +191,26 @@ function Index() {
                 />
               </div>
               
-              <div className="flex flex-col">
+              <div className="flex flex-col min-w-0">
                 <span 
-                  className="text-xl sm:text-2xl font-bold"
+                  className="text-base sm:text-lg lg:text-xl xl:text-2xl font-bold leading-tight"
                   style={{ color: '#3a7e44' }}
                 >
                   ICIDLHV2026
                 </span>
-                <span className="text-xs sm:text-sm text-gray-600 max-w-xs sm:max-w-md lg:max-w-2xl">
+                <span className="text-xs sm:text-sm text-gray-600 leading-tight line-clamp-2 sm:line-clamp-1">
                   International Conference on Research Trends of ICT using Digital Libraries with Human Values & Ethics
                 </span>
               </div>
             </Link>
 
-            {/* College Logo - Top Right */}
-            <div className="hidden md:block flex-shrink-0">
+            {/* College Logo - Hidden on mobile, visible on tablet+ */}
+            <div className="hidden md:block lg:block flex-shrink-0">
               <Image
-                width={200}
-                height={120}
+                width={150}
+                height={90}
                 src="/clglogo.png"
-                className="object-contain"
+                className="object-contain md:w-32 md:h-20 lg:w-40 lg:h-24 xl:w-48 xl:h-28"
                 alt="College Logo"
               />
             </div>
@@ -218,45 +218,47 @@ function Index() {
             {/* Mobile menu button */}
             <button
               onClick={menuToggle}
-              className="md:hidden inline-flex items-center justify-center p-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-gray-100 transition-colors duration-200"
+              className="md:hidden inline-flex items-center justify-center p-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-gray-100 transition-colors duration-200 flex-shrink-0"
               aria-label="Toggle navigation menu"
             >
               {menuOpen ? (
-                <AiOutlineClose className="h-6 w-6" />
+                <AiOutlineClose className="h-5 w-5 sm:h-6 sm:w-6" />
               ) : (
-                <AiOutlineMenu className="h-6 w-6" />
+                <AiOutlineMenu className="h-5 w-5 sm:h-6 sm:w-6" />
               )}
             </button>
           </div>
 
-          {/* Navigation Links Row - Below Header */}
+          {/* Navigation Links Row - Below Header (Hidden on mobile) */}
           <div className="hidden md:block">
-            <ul className="flex items-center justify-center space-x-6 py-3">
-              {links.map((link, index) => {
-                if (!link.enabled || !link.link) return null;
-                
-                const isActive = router.asPath === link.link;
-                
-                return (
-                  <li key={index}>
-                    <Link 
-                      href={link.link}
-                      className={`group relative px-4 py-2 text-sm font-semibold uppercase tracking-wide transition-all duration-200 rounded hover:bg-secondary-50 whitespace-nowrap ${
-                        isActive 
-                          ? 'bg-secondary-100' 
-                          : ''
-                      }`}
-                      style={{ color: isActive ? '#118B50' : '#3a7e44' }}
-                    >
-                      {link.title}
-                      <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-primary-600 transform transition-transform duration-200 ${
-                        isActive ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
-                      }`}></span>
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
+            <div className="overflow-x-auto">
+              <ul className="flex items-center justify-center space-x-2 lg:space-x-4 xl:space-x-6 py-2 lg:py-3 min-w-max">
+                {links.map((link, index) => {
+                  if (!link.enabled || !link.link) return null;
+                  
+                  const isActive = router.asPath === link.link;
+                  
+                  return (
+                    <li key={index} className="flex-shrink-0">
+                      <Link 
+                        href={link.link}
+                        className={`group relative px-2 lg:px-3 xl:px-4 py-2 text-xs lg:text-sm font-semibold uppercase tracking-wide transition-all duration-200 rounded hover:bg-secondary-50 whitespace-nowrap ${
+                          isActive 
+                            ? 'bg-secondary-100' 
+                            : ''
+                        }`}
+                        style={{ color: isActive ? '#118B50' : '#3a7e44' }}
+                      >
+                        {link.title}
+                        <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-primary-600 transform transition-transform duration-200 ${
+                          isActive ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
+                        }`}></span>
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           </div>
 
           {/* Mobile Navigation Menu */}
@@ -265,38 +267,41 @@ function Index() {
               menuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
             }`}
           >
-            <div className="px-3 pt-3 pb-4 space-y-1 bg-gradient-to-br from-primary-600 to-primary-700 rounded-lg mt-2 mb-4">
+            <div className="px-2 pt-3 pb-4 space-y-1 bg-gradient-to-br from-primary-600 to-primary-700 rounded-lg mt-2 mb-3">
               {/* College Logo for Mobile */}
-              <div className="md:hidden flex justify-center mb-4">
+              <div className="flex justify-center mb-4">
                 <Image
-                  width={150}
-                  height={90}
+                  width={120}
+                  height={72}
                   src="/clglogo.png"
                   className="object-contain"
                   alt="College Logo"
                 />
               </div>
               
-              {links.map((link, index) => {
-                if (!link.enabled || !link.link) return null;
-                
-                const isActive = router.asPath === link.link;
-                
-                return (
-                  <Link
-                    key={index}
-                    href={link.link}
-                    onClick={handleLinkClick}
-                    className={`block px-4 py-3 text-sm font-medium uppercase tracking-wide transition-colors duration-200 rounded-lg ${
-                      isActive 
-                        ? 'bg-primary-800 text-white border-l-4 border-secondary-200' 
-                        : 'text-secondary-200 hover:text-white hover:bg-primary-700'
-                    }`}
-                  >
-                    {link.title}
-                  </Link>
-                );
-              })}
+              {/* Mobile Navigation Links */}
+              <div className="grid grid-cols-1 gap-1">
+                {links.map((link, index) => {
+                  if (!link.enabled || !link.link) return null;
+                  
+                  const isActive = router.asPath === link.link;
+                  
+                  return (
+                    <Link
+                      key={index}
+                      href={link.link}
+                      onClick={handleLinkClick}
+                      className={`block px-4 py-3 text-sm font-medium uppercase tracking-wide transition-colors duration-200 rounded-lg text-center ${
+                        isActive 
+                          ? 'bg-primary-800 text-white border-l-4 border-secondary-200' 
+                          : 'text-secondary-200 hover:text-white hover:bg-primary-700'
+                      }`}
+                    >
+                      {link.title}
+                    </Link>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </nav>
