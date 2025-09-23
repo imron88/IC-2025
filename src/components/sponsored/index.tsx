@@ -8,21 +8,6 @@ function Sponsored() {
       name: "Indian Society for Technical Education",
       alt: "ISTE Logo"
     },
-    // {
-    //   image: "/csi.jpg",
-    //   name: "Computer Society of India",
-    //   alt: "CSI Logo"
-    // },
-    {
-      image: "/iie.jpg",
-      name: "The Institution of Engineers",
-      alt: "IIE Logo"
-    },
-    {
-      image: "/gallery/logos/acm.png",
-      name: "Association for Computing Machinery",
-      alt: "ACM Logo"
-    }
   ];
 
   return (
@@ -38,7 +23,7 @@ function Sponsored() {
           <div className="h-1 w-16 sm:w-24 bg-primary-600 mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="flex justify-center aling-center gap-6 sm:gap-8">
           {sponsors.map((sponsor, index) => (
             <div 
               key={index}
