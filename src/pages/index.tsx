@@ -377,7 +377,7 @@ const Home = () => {
                 </ul>
               </div> */}
 
-              <div className="mt-8 sm:mt-12 space-y-6 sm:space-y-8">
+              <div className="space-y-6 sm:space-y-8">
                 <div>
                   <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4" style={{ color: '#3a7e44' }}>About Rajasthan</h2>
                   <p className="mb-6 sm:mb-8 text-justify">
