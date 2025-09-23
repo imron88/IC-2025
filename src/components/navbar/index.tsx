@@ -163,8 +163,8 @@ function Index() {
       <div className="bg-gradient-to-r from-primary-600 to-primary-700 text-white py-1.5 px-2 sm:py-2 sm:px-4">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm">
           <div className="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-4 mb-1 sm:mb-0">
-            <span className="text-secondary-200">📧 icsicst@poornima.org</span>
-            <span className="text-secondary-200">📞 +91-8118874724</span>
+            <span className="text-secondary-200">📧 icidlhv2023@poornima.org</span>
+            <span className="text-secondary-200">📞 +91-9950809459</span>
           </div>
           <div className="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-2">
             <span className="text-secondary-200">📅 May 16-17, 2026</span>

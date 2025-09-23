@@ -39,7 +39,7 @@ function Partners() {
             </h1>
             <p className="text-text-secondary text-lg max-w-2xl">
             Email : icidlhv2023@poornima.org <br />
-            Phone: +91 8118874724
+            Phone: +91 9950809459, +91 8305750628, +91 8440964941
             </p>
           </div>
           <div className="mt-8">
