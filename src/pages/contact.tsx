@@ -8,7 +8,7 @@ function Partners() {
   return (
     <>
       <Head>
-        <title>Contact Us - ICIDLHV- International Conference on Sustainable &amp;Intelligent Computing in Science and Technology</title>
+        <title>Contact Us - ICIDLHV - International Conference on Sustainable &amp;Intelligent Computing in Science and Technology</title>
         <link rel="icon" href="/gallery/favicon.ico" />
       </Head>
       {/* <Schedule /> */}
@@ -38,11 +38,7 @@ function Partners() {
               Contact Us
             </h1>
             <p className="text-text-secondary text-lg max-w-2xl">
-            Email : icsicst@poornima.org <br /> <br /> <br />
-            Dr. Bhanu Pratap <br />
-            Associate Professor, <br />
-            Poornima Institute of Engineering & Technology, <br />
-            Email: bhanu.pratap@poornima.org <br />
+            Email : icidlhv2023@poornima.org <br />
             Phone: +91 8118874724
             </p>
           </div>
@@ -58,28 +54,6 @@ function Partners() {
             &ldquo;This groundbreaking event marks a new era of innovation, collaboration, and knowledge exchange. 
             Join us as we unveil a remarkable conference experience that will shape the future of technology and academia.&rdquo;
           </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                name: "IIIT Nagpur",
-                description: "Indian Institute of Information Technology Nagpur, is a prestigious institution of higher education in the field of Information Technology and Computer Science it is one of the leading institutes in India dedicated to fostering excellence in education, research, and innovation. With a focus on providing industry-relevant curriculum, state-of-the-art facilities, and a vibrant academic environment, IIIT Nagpur aims to nurture the next generation of technocrats and leaders in the IT industry."
-              },
-              {
-                name: "Asia University",
-                description: "Asia University, located in Taiwan, is a prestigious institution renowned for its commitment to academic excellence and innovative research. With a diverse and vibrant campus community, Asia University offers a wide range of undergraduate and graduate programs in various fields. With a focus on global perspectives, interdisciplinary learning, and practical skills development, Asia University prepares students to excel in their chosen careers and make a positive impact in the world."
-              },
-              {
-                name: "Namibia University",
-                description: "Namibia University provide exceptional education and a vibrant learning community. This institution is dedicated to nurturing intellectual growth, fostering critical thinking skills, and promoting a spirit of innovation. With a wide range of academic programs, state-of-the-art facilities, and a supportive faculty and aim to empower their students to become future leaders and contribute positively to society. The Namibia University provides transformative educational journey, where knowledge meets opportunity."
-              }
-            ].map((partner, index) => (
-              <div key={index} className="bg-secondary-100 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
-                <h3 className="text-xl font-semibold text-text-primary mb-4">{partner.name}</h3>
-                <p className="text-text-secondary">{partner.description}</p>
-              </div>
-            ))}
-          </div>
         </div>
 
         <Sponsored />
