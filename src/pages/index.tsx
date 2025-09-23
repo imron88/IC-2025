@@ -80,21 +80,11 @@ const Home = () => {
     },
   ];
   const logoImages = [
-    // {
-    //   image: "/gallery/logos/taru.png",
-    //   id: "e5f6g7h8",
-    //   alt: "",
-    // },
     {
-      image: "/gallery/logos/scopus1.png",
+      image: "/gallery/logos/sla.jpeg",
       id: "i9j0k1l2",
       alt: "",
     },
-    // {
-    //   image: "/gallery/logos/icps1.jpg",
-    //   id: "i9j0k1l2",
-    //   alt: "",
-    // },
   ];
 
   const fetch = (i: number) => {
@@ -263,53 +253,71 @@ const Home = () => {
             <hr className="my-6 sm:my-8 h-px border-0 bg-gray-200 dark:bg-gray-700" />
           </div>
 
-          <div className="bg-background-primary rounded-xl shadow-md p-4 sm:p-6">
-            <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-text-primary"> In Collaboration With</h2>
-            <div className="col-span-full flex h-[250px] sm:h-[300px] w-full overflow-hidden rounded-lg px-1 lg:col-span-3">
-              <Carousel
-                autoPlay={true}
-                interval={4000}
-                loop={true}
-                renderArrowLeft={() => null}
-                renderArrowRight={({ activeIndex, handleNext }) => null}
-                renderDots={({ setActiveIndex, activeIndex }) => {
-                  return (
-                    <div className="absolute bottom-0 left-0 flex h-8 sm:h-10 w-full flex-row items-center justify-center gap-1.5 sm:gap-2 rounded-lg bg-gray-800 bg-opacity-20">
-                      {logoImages.map((image, index) => {
-                        return (
-                          <div
-                            key={index}
-                            className={`${
-                              index == activeIndex ? "bg-primary-500" : "bg-white"
-                            } h-2.5 sm:h-3 w-2.5 sm:w-3 cursor-pointer rounded-full transition duration-300 ease-in-out hover:bg-primary-400`}
-                            onClick={() => setActiveIndex(index)}
-                          ></div>
-                        );
-                      })}
-                    </div>
-                  );
-                }}
-              >
-                {logoImages.map((image, index) => {
-                  return (
-                    <div
-                      key={index}
-                      className="flex h-full w-full items-center justify-center p-4 sm:p-8"
-                    >
-                      <Image
-                        height={300}
-                        width={400}
-                        draggable={false}
-                        className="max-h-[200px] sm:max-h-[250px] w-auto object-contain shadow-lg transition-transform duration-300 hover:scale-105"
-                        src={image.image}
-                        alt={image.alt || "Publication Partner Logo"}
-                      />
-                    </div>
-                  );
-                })}
-              </Carousel>
+
+
+            {/* Background decoration */}
+          
+            <div className="absolute top-0 right-0 w-20 h-20 bg-primary-100 rounded-full -translate-y-10 translate-x-10 opacity-50"></div>
+            <div className="absolute bottom-0 left-0 w-16 h-16 bg-secondary-100 rounded-full translate-y-8 -translate-x-8 opacity-50"></div>
+            
+            <div className="relative z-10">
+              <div className="text-center mb-6">
+                <h2 className="text-2xl sm:text-3xl font-bold mb-2 bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent">
+                  In Collaboration With
+                </h2>
+                <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-secondary-500 mx-auto rounded-full"></div>
+              </div>
+              
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-inner border border-gray-50">
+                <div className="flex h-[280px] sm:h-[320px] w-full overflow-hidden rounded-lg">
+                  <Carousel
+                    autoPlay={true}
+                    interval={4000}
+                    loop={true}
+                    renderArrowLeft={() => null}
+                    renderArrowRight={() => null}
+                    renderDots={({ setActiveIndex, activeIndex }) => {
+                      return (
+                        <div className="absolute bottom-4 left-0 right-0 flex items-center justify-center gap-2">
+                          {logoImages.map((_, index) => (
+                            <button
+                              key={index}
+                              onClick={() => setActiveIndex(index)}
+                              className={`h-3 transition-all duration-300 rounded-full
+                                ${index === activeIndex
+                                  ? 'bg-primary-500 w-8 shadow-lg'
+                                  : 'bg-white/60 w-3 hover:bg-white/80 hover:w-4'}`}
+                              aria-label={`Go to collaboration slide ${index + 1}`}
+                            />
+                          ))}
+                        </div>
+                      );
+                    }}
+                  >
+                    {logoImages.map((image, index) => (
+                      <div
+                        key={index}
+                        className="flex h-full w-full items-center justify-center p-6 sm:p-10"
+                      >
+                        <div className="relative group">
+                          <div className="absolute inset-0 bg-gradient-to-r from-primary-200 to-secondary-200 rounded-xl blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
+                          <Image
+                            height={300}
+                            width={400}
+                            draggable={false}
+                            className="relative max-h-[220px] sm:max-h-[260px] w-auto object-contain drop-shadow-xl transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-2xl rounded-lg"
+                            src={image.image}
+                            alt={image.alt || "Publication Partner Logo"}
+                          />
+                        </div>
+                      </div>
+                    ))}
+                  </Carousel>
+                </div>
+              </div>
             </div>
           </div>
+          <div className="bg-gradient-to-br from-background-primary to-white rounded-xl shadow-lg border border-gray-100 p-4 sm:p-6 relative overflow-hidden">
         </div>
 
         {/* Objectives Section */}
