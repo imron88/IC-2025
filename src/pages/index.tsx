@@ -412,6 +412,37 @@ const Home = () => {
                     India. PIET is the only private institute in Rajasthan to receive funding from AICTE, India for establishing an IDEA Lab.
                   </p>
                 </div>
+
+                <div>
+                  <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4" style={{color: '#3a7e44'}}> Central Library, PIET</h2>
+                  <p className="mb-6 sm:mb-8 text-justify">
+                    The PIET Library is fully computerized with TCS-iON - Library 
+Management Software and uses Gate Entry Management Software 
+integrated with TCS-iON. Bar-Code Technology is used for circulation 
+(issue-return) services. A systematic approach has been adopted for the 
+development of the library and information system by introducing new 
+systems and techniques.
+                  </p>
+                  <p className="mb-6 sm:mb-8 text-justify">
+                    Committed to excellence, the PIET Library and Information Services 
+deliver user-focused, innovative information products, services, and 
+programs of the highest quality that are integrated with teaching, learning, 
+and research activities. In support of its educational mission, the PIET 
+Library and Information Services provide a comfortable open-stack 
+environment for study and research.
+                  </p>
+                  <p className="mb-6 sm:mb-8 text-justify">
+                    The library has the necessary infrastructure and facilities, including 
+electronic information resources, to meet the requirements of both 
+students and faculty members. The collection of the library covers the 
+latest information resources on all technical subject areas.
+ The Library occupies a unique place in the academic and research 
+activities of the institute. The entire library is covered by CCTV camera 
+surveillance and is well-protected with fire safety equipment. Our library is 
+making its best efforts to provide quality services to users by using state-of
+the-art facilities.
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -431,22 +462,9 @@ const Home = () => {
           </div>
         </section>
 
-        {/* About Conference Section */}
-        {/* <section className="bg-white rounded-xl shadow-md p-4 sm:p-8 my-8 sm:my-12">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-center">About Conference</h1>
-            <h2 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-center">
-              2nd International Conference on Sustainable &amp; Intelligent Computing in Science and Technology (IC-SICST 2026)
-            </h2>
-            <p className="mb-6 sm:mb-8 text-justify text-sm sm:text-base">
-              The IC-SICST 2026 conference aims to showcase the recent challenges and their solutions for the development of Sustainable &amp; Intelligent Computing across all areas of science and technology. The International Conference on Sustainable &amp; Intelligent Computing in Science and Technology (IC-SICST 2026) is a premier platform for researchers, academicians, industry professionals, and students to converge and exchange innovative ideas in the fields of sustainable and intelligent computing. This annual event brings together a diverse community of experts to discuss cutting-edge research, emerging trends, and real-world applications in various interdisciplinary areas of science and technology. Our goal for this conference is to gather academic and research contributions from experts working to provide intelligence to their machines and systems.
-            </p>
-          </div>
-        </section> */}
-
         {/* Visitor Counter */}
         <div className="bg-secondary-100 rounded-xl p-4 sm:p-8 text-center my-8 sm:my-12">
-          <div className="text-3xl sm:text-5xl font-bold text-primary-600 mb-2 sm:mb-4">
+          <div className="text-3xl sm:text-5xl font-bold text-primary-600 mb-2 sm:mb-4 text-text-primary">
             <AnimatedNumbers
               includeComma
               animateToNumber={visitorCounter}
