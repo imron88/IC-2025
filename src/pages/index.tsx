@@ -33,7 +33,7 @@ import InaugurationPdf from "@/components/inaugurationPdf";
 import Sponsored from "@/components/sponsored";
 import Schedule from "@/components/schedule";
 
-const AnimatedNumbers = dynamic( import("react-animated-numbers"), {
+const AnimatedNumbers = dynamic(import("react-animated-numbers"), {
   ssr: false,
 });
 
@@ -137,7 +137,7 @@ const Home = () => {
         <link rel="icon" href="/gallery/favicon.ico" />
       </Head>
       {/* <Schedule /> */}
-      <br/>
+      <br />
 
       {/* Hero Section */}
       <main className="bg-gradient-to-b from-background-primary to-white px-4 sm:px-6 lg:px-8">
@@ -148,7 +148,7 @@ const Home = () => {
               <p className="font-semibold text-primary-600 text-sm sm:text-base">16th & 17th May, 2026</p>
             </div>
 
-            <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold leading-tight" style={{color: '#3a7e44'}}>
+            <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold leading-tight" style={{ color: '#3a7e44' }}>
               2nd International Conference on Research Trends of ICT using Digital Libraries with Human Values & Ethics
             </h1>
 
@@ -214,8 +214,8 @@ const Home = () => {
                         key={index}
                         onClick={() => setActiveIndex(index)}
                         className={`h-2 sm:h-2.5 transition-all duration-300 rounded-full
-                          ${index === activeIndex 
-                            ? 'bg-white w-3 sm:w-4' 
+                          ${index === activeIndex
+                            ? 'bg-white w-3 sm:w-4'
                             : 'bg-white/50 w-2 sm:w-2.5 hover:bg-white/80'}`}
                         aria-label={`Go to slide ${index + 1}`}
                       />
@@ -253,8 +253,8 @@ const Home = () => {
 
         {/* Preamble Section */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
-          <div className="lg:col-span-2 prose prose-sm sm:prose-base lg:prose-lg max-w-none" style={{color: '#3a7e44'}}>
-            <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4" style={{color: '#3a7e44'}}>About Conference</h2>
+          <div className="lg:col-span-2 prose prose-sm sm:prose-base lg:prose-lg max-w-none" style={{ color: '#3a7e44' }}>
+            <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4" style={{ color: '#3a7e44' }}>About Conference</h2>
             <p className="text-justify">
               International Conference on Sustainable &amp; Intelligent Computing in Science and Technology
               (ICIDLHV2026) will be held at Poornima Institute
@@ -262,20 +262,20 @@ const Home = () => {
               May 16-17, 2026.
 
               <p className="text-justify">
-                    The changes in present society evolving as a knowledge society have very strong implications on the services of libraries. The advancement in Information & Communication Technologies coupled with social media applications have largely impacted Libraries and Information Centers. The emerging challenges posed by the contemporary environment, manifested in many forms such as digital repositories, big data, cloud computing, open access, user-centric services (e-learning, e-teaching, information literacy, orientation programs), web-based library services, application of social networking, library cooperation (including consortia), and IPR and legal issues, etc., are significant.
-                  </p>
-                  <p className="text-justify">
-                    Conspicuously, a variety of forces, most specifically economic changes and technological developments, have reshaped and transformed libraries from storehouses and data archives to information/knowledge centers and community spaces. The initiatives of government towards building a digital-based society, fostering skill development, and promoting a collaborative and shared ambience have virtually changed the very face of the present society.
-                  </p>
-                  <p className="text-justify">
-                    The conference theme is aptly selected to enable deliberations on the challenges faced by libraries and information centers. The fast-changing social, cultural, and economic environments pose different types of challenges for libraries and information centers, as they are a reflection of society. It is perceived that the deliberations in the conference will help in understanding newer avenues for teaching and learning with ample emphasis on e-Learning, e-Publishing, OERs, and MOOCs.
-                  </p>
-                  <p className="text-justify">
-                    Libraries, as intermediaries, have a larger role to imbibe these advancements and changes and to develop services to help the academic community and the society cope with these developments. Research and innovation are constantly demanding availability of research data management and the search for newer strategies and techniques to adapt to the challenges. The changes in library and information services are inevitable, and so library professionals must get actively involved in the core missions and values of ICT-based tools and techniques.
-                  </p>
-                  <p className="text-justify">
-                    Librarianship, not to be left behind, strives to develop and achieve new strategies and competencies as well as explore new arenas to put into use the technical skills for furthering library and information services more valuably and effectively.
-                  </p>
+                The changes in present society evolving as a knowledge society have very strong implications on the services of libraries. The advancement in Information & Communication Technologies coupled with social media applications have largely impacted Libraries and Information Centers. The emerging challenges posed by the contemporary environment, manifested in many forms such as digital repositories, big data, cloud computing, open access, user-centric services (e-learning, e-teaching, information literacy, orientation programs), web-based library services, application of social networking, library cooperation (including consortia), and IPR and legal issues, etc., are significant.
+              </p>
+              <p className="text-justify">
+                Conspicuously, a variety of forces, most specifically economic changes and technological developments, have reshaped and transformed libraries from storehouses and data archives to information/knowledge centers and community spaces. The initiatives of government towards building a digital-based society, fostering skill development, and promoting a collaborative and shared ambience have virtually changed the very face of the present society.
+              </p>
+              <p className="text-justify">
+                The conference theme is aptly selected to enable deliberations on the challenges faced by libraries and information centers. The fast-changing social, cultural, and economic environments pose different types of challenges for libraries and information centers, as they are a reflection of society. It is perceived that the deliberations in the conference will help in understanding newer avenues for teaching and learning with ample emphasis on e-Learning, e-Publishing, OERs, and MOOCs.
+              </p>
+              <p className="text-justify">
+                Libraries, as intermediaries, have a larger role to imbibe these advancements and changes and to develop services to help the academic community and the society cope with these developments. Research and innovation are constantly demanding availability of research data management and the search for newer strategies and techniques to adapt to the challenges. The changes in library and information services are inevitable, and so library professionals must get actively involved in the core missions and values of ICT-based tools and techniques.
+              </p>
+              <p className="text-justify">
+                Librarianship, not to be left behind, strives to develop and achieve new strategies and competencies as well as explore new arenas to put into use the technical skills for furthering library and information services more valuably and effectively.
+              </p>
               {<br />}
               {<br />}
             </p>
@@ -376,71 +376,71 @@ const Home = () => {
                   </li>
                 </ul>
               </div> */}
-              
+
               <div className="mt-8 sm:mt-12 space-y-6 sm:space-y-8">
                 <div>
-                  <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4" style={{color: '#3a7e44'}}>About Rajasthan</h2>
+                  <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4" style={{ color: '#3a7e44' }}>About Rajasthan</h2>
                   <p className="mb-6 sm:mb-8 text-justify">
                     Rajasthan is the largest state of India by an area 3,42,239 sq km. It encompasses most of the area of the large, inhospitable Great Indian Desert (Thar Desert), which has an edge paralleling the Sutlej-Indus River valley along its border with Pakistan. The state has borders with Pakistan to the west, Gujrat to the southwest, Madhya Pradesh to the southeast, Uttar Pradesh &amp; Haryana to the northeast &amp; Punjab to the north. The glory of the state is retained by its majestic places, forts, monuments, vibrant culture, and rich heritage which draw innumerable tourists from across the globe.
                   </p>
                 </div>
 
                 <div>
-                  <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4" style={{color: '#3a7e44'}}>About Jaipur</h2>
+                  <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4" style={{ color: '#3a7e44' }}>About Jaipur</h2>
                   <p className="mb-6 sm:mb-8 text-justify">
                     Jaipur (Pink City of India), the capital of Rajasthan state in India, was founded in 1727 by Maharaj Sawai Jai Singh. It is an enormously admired tourist destination in Rajasthan and India. Its features of beautiful Architecture, Town Planning, Arts and Crafts, Culture, tourism have endowed it with uniqueness in India&apos;s urban character. Jaipur being capital of Rajasthan and one of the important cities of Golden Triangle is the focus of the socio-economic and political center of the State. Jaipur is an expression of the astronomical skills, living traditions, unique urban form and exemplary foresighted city planning of an 18th century city from India.
                   </p>
                 </div>
 
                 <div>
-                  <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4" style={{color: '#3a7e44'}}>About Poornima Institute</h2>
+                  <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4" style={{ color: '#3a7e44' }}>About Poornima Institute</h2>
                   <p className="mb-6 sm:mb-8 text-justify">
-                    Poornima Institute of Engineering and Technology (PIET) is a premier 
-                    institution in engineering education, established in the academic year 
-                    2007. Affiliated with Rajasthan Technical University (Kota), approved by 
-                    AICTE, and recognized under UGC 2(f), PIET was accredited with NAAC - 
-                    A Grade in 2025. PIET has been granted Autonomous Status in July 2025, 
-                    marking a significant milestone in its journey toward academic excellence 
-                    and innovation.With over 1700 students, the institute offers eight 
-                    specialized undergraduate engineering programs, focused on imparting 
-                    robust technical skills and holistic development. In recognition of its 
-                    sustained quality enhancement, PIET has consistently ranked among the 
-                    top five institutions under the QIV Ranking by RTU, Kota, and holds a 
-                    Diamond rating by QS I-Gauge.Rated PLATINUM by AICTE-CII Survey for 
-                    strong industry-linked technical institutes, PIET has also been rated 3.5 
-                    Star by the Innovation Council, Ministry of Education, Government of 
+                    Poornima Institute of Engineering and Technology (PIET) is a premier
+                    institution in engineering education, established in the academic year
+                    2007. Affiliated with Rajasthan Technical University (Kota), approved by
+                    AICTE, and recognized under UGC 2(f), PIET was accredited with NAAC -
+                    A Grade in 2025. PIET has been granted Autonomous Status in July 2025,
+                    marking a significant milestone in its journey toward academic excellence
+                    and innovation.With over 1700 students, the institute offers eight
+                    specialized undergraduate engineering programs, focused on imparting
+                    robust technical skills and holistic development. In recognition of its
+                    sustained quality enhancement, PIET has consistently ranked among the
+                    top five institutions under the QIV Ranking by RTU, Kota, and holds a
+                    Diamond rating by QS I-Gauge.Rated PLATINUM by AICTE-CII Survey for
+                    strong industry-linked technical institutes, PIET has also been rated 3.5
+                    Star by the Innovation Council, Ministry of Education, Government of
                     India. PIET is the only private institute in Rajasthan to receive funding from AICTE, India for establishing an IDEA Lab.
                   </p>
                 </div>
 
                 <div>
-                  <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4" style={{color: '#3a7e44'}}> Central Library, PIET</h2>
+                  <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4" style={{ color: '#3a7e44' }}> Central Library, PIET</h2>
                   <p className="mb-6 sm:mb-8 text-justify">
-                    The PIET Library is fully computerized with TCS-iON - Library 
-Management Software and uses Gate Entry Management Software 
-integrated with TCS-iON. Bar-Code Technology is used for circulation 
-(issue-return) services. A systematic approach has been adopted for the 
-development of the library and information system by introducing new 
-systems and techniques.
+                    The PIET Library is fully computerized with TCS-iON - Library
+                    Management Software and uses Gate Entry Management Software
+                    integrated with TCS-iON. Bar-Code Technology is used for circulation
+                    (issue-return) services. A systematic approach has been adopted for the
+                    development of the library and information system by introducing new
+                    systems and techniques.
                   </p>
                   <p className="mb-6 sm:mb-8 text-justify">
-                    Committed to excellence, the PIET Library and Information Services 
-deliver user-focused, innovative information products, services, and 
-programs of the highest quality that are integrated with teaching, learning, 
-and research activities. In support of its educational mission, the PIET 
-Library and Information Services provide a comfortable open-stack 
-environment for study and research.
+                    Committed to excellence, the PIET Library and Information Services
+                    deliver user-focused, innovative information products, services, and
+                    programs of the highest quality that are integrated with teaching, learning,
+                    and research activities. In support of its educational mission, the PIET
+                    Library and Information Services provide a comfortable open-stack
+                    environment for study and research.
                   </p>
                   <p className="mb-6 sm:mb-8 text-justify">
-                    The library has the necessary infrastructure and facilities, including 
-electronic information resources, to meet the requirements of both 
-students and faculty members. The collection of the library covers the 
-latest information resources on all technical subject areas.
- The Library occupies a unique place in the academic and research 
-activities of the institute. The entire library is covered by CCTV camera 
-surveillance and is well-protected with fire safety equipment. Our library is 
-making its best efforts to provide quality services to users by using state-of
-the-art facilities.
+                    The library has the necessary infrastructure and facilities, including
+                    electronic information resources, to meet the requirements of both
+                    students and faculty members. The collection of the library covers the
+                    latest information resources on all technical subject areas.
+                    The Library occupies a unique place in the academic and research
+                    activities of the institute. The entire library is covered by CCTV camera
+                    surveillance and is well-protected with fire safety equipment. Our library is
+                    making its best efforts to provide quality services to users by using state-of
+                    the-art facilities.
                   </p>
                 </div>
               </div>
@@ -448,16 +448,16 @@ the-art facilities.
 
             <div className="md:w-1/2 space-y-4 sm:space-y-6">
               {/* Images section - wrapped in rounded corners and shadow */}
-              {["/bg.JPG", "/gallery/2022/i1.jpg", "/gallery/city_images/RAJASTHAN.jpg", 
+              {["/bg.JPG", "/gallery/2022/i1.jpg", "/gallery/city_images/RAJASTHAN.jpg",
                 "/gallery/city_images/jaipur.jpg", "/gallery/city_images/jaipur-hd-img.webp"].map((src, index) => (
-                <div key={index} className="rounded-xl overflow-hidden shadow-lg">
-                  <img
-                    src={src}
-                    alt="Conference venue and location images"
-                    className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-              ))}
+                  <div key={index} className="rounded-xl overflow-hidden shadow-lg">
+                    <img
+                      src={src}
+                      alt="Conference venue and location images"
+                      className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                ))}
             </div>
           </div>
         </section>
@@ -479,7 +479,7 @@ the-art facilities.
               ]}
             />
           </div>
-          <p className="text-lg sm:text-xl font-semibold" style={{color: '#3a7e44'}}>Visitors</p>
+          <p className="text-lg sm:text-xl font-semibold" style={{ color: '#3a7e44' }}>Visitors</p>
         </div>
 
         <hr className="my-6 sm:my-8 h-px border-0 bg-gray-200" />
@@ -487,8 +487,8 @@ the-art facilities.
         {/* Statistics Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 my-8 sm:my-12">
           {counterData.map((item, index) => (
-            <div key={index} 
-                 className="bg-background-primary rounded-xl shadow-md p-4 sm:p-6 text-center transform hover:scale-105 transition-all duration-300">
+            <div key={index}
+              className="bg-background-primary rounded-xl shadow-md p-4 sm:p-6 text-center transform hover:scale-105 transition-all duration-300">
               <AnimatedNumbers
                 animateToNumber={item.maxCount}
                 locale="en-US"
