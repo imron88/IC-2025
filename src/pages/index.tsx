@@ -145,7 +145,7 @@ const Home = () => {
           <div className="col-span-full lg:col-span-2 space-y-4 sm:space-y-6">
             <div className="flex items-center space-x-2 bg-secondary-100 px-3 sm:px-4 py-2 rounded-full w-fit">
               <RiCalendarTodoFill className="text-lg sm:text-xl text-primary-600" />
-              <p className="font-semibold text-primary-600 text-sm sm:text-base">16th & 17th May, 2026</p>
+              <p className="font-semibold text-primary-600 text-sm sm:text-base"> 20th & 21st  February, 2026</p>
             </div>
 
             <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold leading-tight" style={{ color: '#3a7e44' }}>
@@ -161,14 +161,6 @@ const Home = () => {
             </div>
 
             <div className="flex space-x-3 sm:space-x-5 text-xl sm:text-2xl text-primary-600">
-              {/* <Link
-                href={"https://www.piet.poornima.org/"}
-                aria-label={"icimmi twitter"}
-              >
-                <RiTwitterFill
-                  className={"grow-on-hover cursor-pointer hover:text-sky-500"}
-                />
-              </Link> */}
               <Link href={"tel:+91-9950809459"} aria-label={"ICIDLHV phone"}>
                 <RiPhoneFill
                   className={
@@ -271,8 +263,8 @@ const Home = () => {
             <hr className="my-6 sm:my-8 h-px border-0 bg-gray-200 dark:bg-gray-700" />
           </div>
 
-          {/* <div className="bg-background-primary rounded-xl shadow-md p-4 sm:p-6">
-            <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-text-primary">Publication Partners</h2>
+          <div className="bg-background-primary rounded-xl shadow-md p-4 sm:p-6">
+            <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-text-primary"> In Collaboration With</h2>
             <div className="col-span-full flex h-[250px] sm:h-[300px] w-full overflow-hidden rounded-lg px-1 lg:col-span-3">
               <Carousel
                 autoPlay={true}
@@ -317,7 +309,7 @@ const Home = () => {
                 })}
               </Carousel>
             </div>
-          </div> */}
+          </div>
         </div>
 
         {/* Objectives Section */}
