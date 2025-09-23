@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { AiFillCaretDown } from "react-icons/ai";
+import { AiFillCaretDown, AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
@@ -7,19 +7,22 @@ import Image from "next/image";
 const Dropdown = ({
   title,
   dropdown,
+  isMobile = false,
+  closeMenu,
 }: {
   title: string;
   dropdown: { title: string; link: string }[];
+  isMobile?: boolean;
+  closeMenu?: () => void;
 }) => {
   const [dropOpen, setDropOpen] = useState(false);
-  const dropdownRef = useRef(null);
+  const dropdownRef = useRef<HTMLLIElement>(null);
   const dropToggle = () => setDropOpen(!dropOpen);
 
   const { asPath } = useRouter();
 
   useEffect(() => {
     const handleClickOutside = (event: any) => {
-      // @ts-ignore
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setDropOpen(false);
       }
@@ -32,34 +35,56 @@ const Dropdown = ({
     };
   }, []);
 
+  const handleLinkClick = () => {
+    setDropOpen(false);
+    if (closeMenu) closeMenu();
+  };
+
   return (
     <li
       ref={dropdownRef}
-      onClick={dropToggle}
-      className={"relative w-full cursor-pointer list-none"}
+      className={"relative cursor-pointer list-none"}
     >
-      <span
-        className={`${title.includes("20")
-          ? "grow-on-hover mt-1 rounded bg-red-900 px-3 py-2 text-xs"
-          : ""
-          } inline-flex items-center text-white`}
+      <button
+        onClick={dropToggle}
+        className={`group inline-flex items-center justify-between w-full py-3 px-4 text-left transition-all duration-200 hover:bg-primary-700 rounded-lg ${
+          isMobile ? "text-white" : "text-secondary-200 hover:text-white"
+        }`}
       >
-        {title.toUpperCase()}
-        <AiFillCaretDown className={`ml-1 ${dropOpen ? "rotate-180" : ""}`} />
-      </span>
+        <span className="text-sm font-medium uppercase tracking-wider">
+          {title}
+        </span>
+        <AiFillCaretDown 
+          className={`ml-2 text-xs transition-transform duration-200 ${
+            dropOpen ? "rotate-180" : ""
+          }`} 
+        />
+      </button>
+      
       {dropOpen && (
         <div
-          id="dropNav"
-          className={`-left-1/2 z-10 mt-3 w-full divide-y divide-primary-600 rounded bg-secondary-100 font-normal shadow-lg md:absolute ${title.toLowerCase().includes("archive") ? "md:w-36" : "md:w-52"
-            }`}
+          className={`${
+            isMobile 
+              ? "mt-2 w-full bg-primary-800 rounded-lg" 
+              : "absolute left-0 top-full mt-2 w-64 bg-white shadow-xl rounded-lg border border-gray-100 z-50"
+          }`}
         >
-          <ul className="w-full py-2 text-sm font-semibold text-text-primary">
+          <ul className="py-2">
             {dropdown.map((item, index) => {
+              const isActive = asPath === item.link;
               return (
                 <li key={index}>
                   <Link
                     href={item.link}
-                    className="block px-4 py-2 hover:bg-secondary-200"
+                    onClick={handleLinkClick}
+                    className={`block px-4 py-3 text-sm font-medium transition-colors duration-200 ${
+                      isMobile
+                        ? "text-secondary-200 hover:text-white hover:bg-primary-900"
+                        : isActive
+                        ? "bg-secondary-100 border-l-4 border-primary-600"
+                        : "hover:bg-secondary-50"
+                    }`}
+                    style={!isMobile ? { color: '#3a7e44' } : {}}
                   >
                     {item.title}
                   </Link>
@@ -81,18 +106,18 @@ function Index() {
       enabled: true,
     },
     {
-      title: "Call for papers",
+      title: "Call for Papers",
       link: "/call-for-papers",
       enabled: true,
     },
     {
       title: "Paper Submission",
-      link: "/papersubmission",
+      link: "/paper-submission",
       enabled: true,
     },
     {
       title: "Registration",
-      link: "/registration",
+      link: "/register",
       enabled: true,
     },
     {
@@ -115,40 +140,10 @@ function Index() {
       link: "/contact",
       enabled: true,
     },
-    // {
-    //   title: "Special Sessions",
-    //   link: "/special-session",
-    //   enabled: true,
-    // },
-    // {
-    //   title: "Archive",
-    //   dropdown: [
-    //     {
-    //       title: "ICIMMI - 2023",
-    //       link: "/archive/2023",
-    //     },
-    //     {
-    //       title: "ICIMMI - 2022",
-    //       link: "/archive/2022",
-    //     },
-    //     {
-    //       title: "ICIMMI - 2021",
-    //       link: "/archive/2021",
-    //     },
-    //     {
-    //       title: "ICIMMI - 2020",
-    //       link: "/archive/2020",
-    //     },
-    //     {
-    //       title: "ICIMMI - 2019",
-    //       link: "/archive/2019",
-    //     },
-    //   ],
-    //   enabled: true,
-    // },
   ];
 
   const [menuOpen, setMenu] = useState(false);
+  const router = useRouter();
   
   const closeMenu = () => {
     setMenu(false);
@@ -158,51 +153,62 @@ function Index() {
     setMenu(!menuOpen);
   };
 
-  const router = useRouter();
-  const marqueeVariants = {
-    animate: {
-      x: [0, -1035],
-      transition: {
-        x: {
-          repeat: Infinity,
-          repeatType: "loop",
-          duration: 5,
-          ease: "linear",
-        },
-      },
-    },
+  const handleLinkClick = () => {
+    closeMenu();
   };
 
   return (
-    <div className="sticky top-0 z-50">
-      <nav className="bg-primary-600 shadow-lg">
-        <div className="mx-auto max-w-screen-xl flex-wrap items-center justify-between p-4">
-          <div className="flex items-center justify-between w-full">
-            <Link href="/" className="flex items-center space-x-4">
-              <div className="h-14 w-14">
+    <>
+      {/* Top Header Bar */}
+      <div className="bg-gradient-to-r from-primary-600 to-primary-700 text-white py-2 px-4">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center text-sm">
+          <div className="flex items-center space-x-4 mb-2 sm:mb-0">
+            <span className="text-secondary-200">📧 icsicst@poornima.org</span>
+            <span className="text-secondary-200">📞 +91-8118874724</span>
+          </div>
+          <div className="flex items-center space-x-2">
+            <span className="text-secondary-200">📅 May 16-17, 2026</span>
+            <span className="text-secondary-200">📍 Jaipur, Rajasthan, India</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Navigation */}
+      <div className="sticky top-0 z-50 bg-white shadow-lg border-b border-gray-200">
+        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Top Header Section */}
+          <div className="flex items-center justify-between h-20 border-b border-gray-100">
+            {/* Logo and Conference Title */}
+            <Link href="/" className="flex items-center space-x-4 flex-shrink-0">
+              <div className="h-12 w-12 sm:h-14 sm:w-14">
                 <Image
                   width={56}
                   height={56}
                   src="/pietlogo.png"
                   className="object-contain"
                   alt="PIET Logo"
+                  priority
                 />
               </div>
               
               <div className="flex flex-col">
-                <span className="text-2xl font-bold text-white">
+                <span 
+                  className="text-xl sm:text-2xl font-bold"
+                  style={{ color: '#3a7e44' }}
+                >
                   ICIDLHV2026
                 </span>
-                <span className="text-sm text-secondary-200">
+                <span className="text-xs sm:text-sm text-gray-600 max-w-xs sm:max-w-md lg:max-w-2xl">
                   International Conference on Research Trends of ICT using Digital Libraries with Human Values & Ethics
                 </span>
               </div>
             </Link>
 
-            <div className="hidden lg:block">
+            {/* College Logo - Top Right */}
+            <div className="hidden md:block flex-shrink-0">
               <Image
-                width={250}
-                height={150}
+                width={200}
+                height={120}
                 src="/clglogo.png"
                 className="object-contain"
                 alt="College Logo"
@@ -212,45 +218,90 @@ function Index() {
             {/* Mobile menu button */}
             <button
               onClick={menuToggle}
-              className="inline-flex items-center p-2 text-white hover:bg-primary-700 rounded-lg md:hidden"
+              className="md:hidden inline-flex items-center justify-center p-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-gray-100 transition-colors duration-200"
+              aria-label="Toggle navigation menu"
             >
-              <svg
-                className="h-6 w-6"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clipRule="evenodd"
-                ></path>
-              </svg>
+              {menuOpen ? (
+                <AiOutlineClose className="h-6 w-6" />
+              ) : (
+                <AiOutlineMenu className="h-6 w-6" />
+              )}
             </button>
           </div>
 
-          {/* Navigation Links */}
-          <div className={`${menuOpen ? "block" : "hidden"} md:block mt-4 md:mt-0`}>
-            <ul className="flex flex-col md:flex-row md:items-center md:space-x-6 space-y-4 md:space-y-0">
-              {links.map((link, index) => (
-                link.enabled && link.link && (
-                  <li key={index} className="group">
+          {/* Navigation Links Row - Below Header */}
+          <div className="hidden md:block">
+            <ul className="flex items-center justify-center space-x-6 py-3">
+              {links.map((link, index) => {
+                if (!link.enabled || !link.link) return null;
+                
+                const isActive = router.asPath === link.link;
+                
+                return (
+                  <li key={index}>
                     <Link 
                       href={link.link}
-                      className="text-secondary-200 hover:text-white transition-colors duration-200 text-sm uppercase tracking-wider"
-                      onClick={closeMenu}
+                      className={`group relative px-4 py-2 text-sm font-semibold uppercase tracking-wide transition-all duration-200 rounded hover:bg-secondary-50 whitespace-nowrap ${
+                        isActive 
+                          ? 'bg-secondary-100' 
+                          : ''
+                      }`}
+                      style={{ color: isActive ? '#118B50' : '#3a7e44' }}
                     >
                       {link.title}
-                      <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-white"></span>
+                      <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-primary-600 transform transition-transform duration-200 ${
+                        isActive ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
+                      }`}></span>
                     </Link>
                   </li>
-                )
-              ))}
+                );
+              })}
             </ul>
           </div>
-        </div>
-      </nav>
-    </div>
+
+          {/* Mobile Navigation Menu */}
+          <div 
+            className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+              menuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+            }`}
+          >
+            <div className="px-3 pt-3 pb-4 space-y-1 bg-gradient-to-br from-primary-600 to-primary-700 rounded-lg mt-2 mb-4">
+              {/* College Logo for Mobile */}
+              <div className="md:hidden flex justify-center mb-4">
+                <Image
+                  width={150}
+                  height={90}
+                  src="/clglogo.png"
+                  className="object-contain"
+                  alt="College Logo"
+                />
+              </div>
+              
+              {links.map((link, index) => {
+                if (!link.enabled || !link.link) return null;
+                
+                const isActive = router.asPath === link.link;
+                
+                return (
+                  <Link
+                    key={index}
+                    href={link.link}
+                    onClick={handleLinkClick}
+                    className={`block px-4 py-3 text-sm font-medium uppercase tracking-wide transition-colors duration-200 rounded-lg ${
+                      isActive 
+                        ? 'bg-primary-800 text-white border-l-4 border-secondary-200' 
+                        : 'text-secondary-200 hover:text-white hover:bg-primary-700'
+                    }`}
+                  >
+                    {link.title}
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </nav>
+      </div>
+    </>
   );
 }
 
