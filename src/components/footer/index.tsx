@@ -43,7 +43,7 @@ const Footer = () => {
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-50"></div>
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent-400 via-secondary-400 to-accent-400"></div>
-      
+
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-10 lg:py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-12 mb-8">
           {/* Logo and Description */}
@@ -68,16 +68,16 @@ const Footer = () => {
                 </p>
               </div>
             </Link>
-            
+
             <div className="space-y-3 sm:space-y-4">
               <p className="text-secondary-200 text-xs sm:text-sm leading-relaxed">
-                The Microsoft CMT service was used for managing the peer-reviewing process for this conference. 
-                This service was provided for free by Microsoft and they bore all expenses, including costs for 
+                The Microsoft CMT service was used for managing the peer-reviewing process for this conference.
+                This service was provided for free by Microsoft and they bore all expenses, including costs for
                 Azure cloud services as well as for software development and support.
               </p>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4">
                 <p className="text-white text-sm sm:text-base font-medium leading-relaxed">
-                  Join us for the 2nd International Conference on Research Trends of ICT using Digital Libraries with Human Values & Ethics 
+                  Join us for the 2nd International Conference on Research Trends of ICT using Digital Libraries with Human Values & Ethics
                   in Science and Technology at PIET.
                 </p>
               </div>
@@ -103,25 +103,25 @@ const Footer = () => {
                   </p>
                 </div>
               </div>
-              
+
               <div className="flex items-center space-x-3 group">
                 <div className="bg-accent-500 p-2 rounded-lg group-hover:bg-accent-400 transition-colors duration-300">
                   <RiPhoneFill className="text-white text-lg" />
                 </div>
-                <a 
-                  href="tel:+91-8118874724" 
+                <a
+                  href="tel:+91-8118874724"
                   className="text-secondary-200 hover:text-white text-sm sm:text-base transition-colors duration-300 font-medium"
                 >
                   +91-8118874724
                 </a>
               </div>
-              
+
               <div className="flex items-center space-x-3 group">
                 <div className="bg-accent-500 p-2 rounded-lg group-hover:bg-accent-400 transition-colors duration-300">
                   <RiGlobalLine className="text-white text-lg" />
                 </div>
-                <a 
-                  href="https://www.piet.poornima.org" 
+                <a
+                  href="https://www.piet.poornima.org"
                   className="text-secondary-200 hover:text-white text-sm sm:text-base transition-colors duration-300 font-medium"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -144,7 +144,7 @@ const Footer = () => {
               />
             </div>
           </div>
-          
+
           {/* Mobile College Logo */}
           <div className="xl:hidden flex justify-center mt-4">
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 sm:p-4">
@@ -198,7 +198,7 @@ const Footer = () => {
           {/* Social Links - Enhanced */}
           <div className="flex space-x-3 sm:space-x-4">
             {socialLinks.map((social) => (
-              <Link 
+              <Link
                 key={social.label}
                 href={social.href}
                 className={`group relative p-2 sm:p-3 bg-white/10 backdrop-blur-sm rounded-xl 
@@ -218,7 +218,7 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        
+
         {/* Conference Badge */}
         <div className="text-center mt-6 sm:mt-8">
           <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-accent-500 to-secondary-500 
