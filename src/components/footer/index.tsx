@@ -173,7 +173,7 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0 pt-4">
           <div className="text-center lg:text-left">
             <p className="text-sm sm:text-base text-white font-medium">
-              © 2026 ICSICST. All rights reserved.
+              © 2026 ICIDLHV. All rights reserved.
             </p>
             <p className="text-xs sm:text-sm text-secondary-200 mt-1">
               Created with ❤️ by{" "}
