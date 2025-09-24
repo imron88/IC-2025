@@ -62,8 +62,8 @@ const Dropdown = ({
       {dropOpen && (
         <div
           className={`${isMobile
-              ? "mt-2 w-full bg-primary-800 rounded-lg"
-              : "absolute left-0 top-full mt-2 w-64 bg-white shadow-xl rounded-lg border border-gray-100 z-50"
+            ? "mt-2 w-full bg-primary-800 rounded-lg"
+            : "absolute left-0 top-full mt-2 w-64 bg-white shadow-xl rounded-lg border border-gray-100 z-50"
             }`}
         >
           <ul className="py-2">
@@ -75,10 +75,10 @@ const Dropdown = ({
                     href={item.link}
                     onClick={handleLinkClick}
                     className={`block px-4 py-3 text-sm font-medium transition-colors duration-200 ${isMobile
-                        ? "text-secondary-200 hover:text-white hover:bg-primary-900"
-                        : isActive
-                          ? "bg-secondary-100 border-l-4 border-primary-600"
-                          : "hover:bg-secondary-50"
+                      ? "text-secondary-200 hover:text-white hover:bg-primary-900"
+                      : isActive
+                        ? "bg-secondary-100 border-l-4 border-primary-600"
+                        : "hover:bg-secondary-50"
                       }`}
                     style={!isMobile ? { color: '#3a7e44' } : {}}
                   >
@@ -239,8 +239,8 @@ function Index() {
                     <Link
                       href={link.link}
                       className={`group relative px-4 py-2 text-sm font-semibold uppercase tracking-wide transition-all duration-200 rounded hover:bg-secondary-50 whitespace-nowrap ${isActive
-                          ? 'bg-secondary-100'
-                          : ''
+                        ? 'bg-secondary-100'
+                        : ''
                         }`}
                       style={{ color: isActive ? '#118B50' : '#3a7e44' }}
                     >
@@ -282,8 +282,8 @@ function Index() {
                     href={link.link}
                     onClick={handleLinkClick}
                     className={`block px-4 py-3 text-sm font-medium uppercase tracking-wide transition-colors duration-200 rounded-lg ${isActive
-                        ? 'bg-primary-800 text-white border-l-4 border-secondary-200'
-                        : 'text-secondary-200 hover:text-white hover:bg-primary-700'
+                      ? 'bg-primary-800 text-white border-l-4 border-secondary-200'
+                      : 'text-secondary-200 hover:text-white hover:bg-primary-700'
                       }`}
                   >
                     {link.title}
