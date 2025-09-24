@@ -245,7 +245,7 @@ const Home = () => {
               {/* Background decoration */}
               <div className="absolute top-0 right-0 w-12 sm:w-16 lg:w-20 h-12 sm:h-16 lg:h-20 bg-primary-100 rounded-full -translate-y-6 sm:-translate-y-8 lg:-translate-y-10 translate-x-6 sm:translate-x-8 lg:translate-x-10 opacity-50"></div>
               <div className="absolute bottom-0 left-0 w-10 sm:w-12 lg:w-16 h-10 sm:h-12 lg:h-16 bg-secondary-100 rounded-full translate-y-5 sm:translate-y-6 lg:translate-y-8 -translate-x-5 sm:-translate-x-6 lg:-translate-x-8 opacity-50"></div>
-              
+
               <div className="relative z-10">
                 <div className="text-center mb-4 sm:mb-6">
                   <h2 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent">
@@ -253,7 +253,7 @@ const Home = () => {
                   </h2>
                   <div className="w-16 sm:w-20 lg:w-24 h-0.5 sm:h-1 bg-gradient-to-r from-primary-500 to-secondary-500 mx-auto rounded-full"></div>
                 </div>
-                
+
                 <div className="bg-white/80 backdrop-blur-sm rounded-xl p-3 sm:p-4 shadow-inner border border-gray-50">
                   <div className="flex h-[200px] sm:h-[240px] lg:h-[280px] w-full overflow-hidden rounded-lg">
                     <Carousel
