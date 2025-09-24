@@ -11,7 +11,7 @@ function Committe() {
       designation: "Director & Principal, PIET",
     },
   ];
-  
+
   const pietAdvisoryCommittee = [
     {
       name: "Dr. Anil Kumar",
@@ -42,14 +42,14 @@ function Committe() {
       designation: "Prof., PIET",
     },
   ];
-  
+
   const conferenceChair = [
     {
       name: "Dr. Balwan",
       designation: "Registrar & Chief Proctor, PIET",
     },
   ];
-  
+
   const programmeChair = [
     {
       name: "Dr. Sama Jain",
@@ -64,14 +64,14 @@ function Committe() {
       designation: "Asstt Professor, PIET",
     },
   ];
-  
+
   const convener = [
     {
       name: "Dr. Sama Jain",
       designation: "HoD, Department of Applied Science, PIET",
     },
   ];
-  
+
   const coConvener = [
     {
       name: "Prof. (Dr) Krati Sharma",
@@ -82,7 +82,7 @@ function Committe() {
       designation: "Associate Prof., PIET",
     },
   ];
-  
+
   const organizingCommittee = [
     {
       name: "Ms. Suman Jain",
@@ -107,14 +107,14 @@ function Committe() {
       <main className="bg-gradient-to-b from-background-primary to-white px-4 sm:px-6 lg:px-8 pt-7 rounded-lg">
         {/* Patron Section */}
         <div className="bg-background-primary rounded-lg sm:rounded-xl shadow-md p-4 sm:p-6 lg:p-8 mb-4 sm:mb-6 lg:mb-8">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6" style={{color: '#3a7e44'}}>Patron</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6" style={{ color: '#3a7e44' }}>Patron</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {patron.map((item, index) => (
-              <div 
+              <div
                 key={index}
                 className="bg-secondary-100 rounded-lg p-4 sm:p-6 hover:shadow-md transition-shadow duration-300"
               >
-                <h3 className="text-lg sm:text-xl font-semibold mb-2" style={{color: '#3a7e44'}}>
+                <h3 className="text-lg sm:text-xl font-semibold mb-2" style={{ color: '#3a7e44' }}>
                   {item.name}
                 </h3>
                 <p className="text-sm sm:text-base text-text-secondary">
@@ -127,14 +127,14 @@ function Committe() {
 
         {/* PIET Advisory Committee Section */}
         <div className="bg-background-primary rounded-lg sm:rounded-xl shadow-md p-4 sm:p-6 lg:p-8 mb-4 sm:mb-6 lg:mb-8">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6" style={{color: '#3a7e44'}}>PIET Advisory Committee</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6" style={{ color: '#3a7e44' }}>PIET Advisory Committee</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {pietAdvisoryCommittee.map((item, index) => (
-              <div 
+              <div
                 key={index}
                 className="bg-secondary-100 rounded-lg p-4 sm:p-6 hover:shadow-md transition-shadow duration-300"
               >
-                <h3 className="text-lg sm:text-xl font-semibold mb-2" style={{color: '#3a7e44'}}>
+                <h3 className="text-lg sm:text-xl font-semibold mb-2" style={{ color: '#3a7e44' }}>
                   {item.name}
                 </h3>
                 <p className="text-sm sm:text-base text-text-secondary">
@@ -147,14 +147,14 @@ function Committe() {
 
         {/* Conference Chair Section */}
         <div className="bg-background-primary rounded-lg sm:rounded-xl shadow-md p-4 sm:p-6 lg:p-8 mb-4 sm:mb-6 lg:mb-8">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6" style={{color: '#3a7e44'}}>Conference Chair</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6" style={{ color: '#3a7e44' }}>Conference Chair</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {conferenceChair.map((item, index) => (
-              <div 
+              <div
                 key={index}
                 className="bg-secondary-100 rounded-lg p-4 sm:p-6 hover:shadow-md transition-shadow duration-300"
               >
-                <h3 className="text-lg sm:text-xl font-semibold mb-2" style={{color: '#3a7e44'}}>
+                <h3 className="text-lg sm:text-xl font-semibold mb-2" style={{ color: '#3a7e44' }}>
                   {item.name}
                 </h3>
                 <p className="text-sm sm:text-base text-text-secondary">
@@ -167,14 +167,14 @@ function Committe() {
 
         {/* Programme Chair & Co Chair Section */}
         <div className="bg-background-primary rounded-lg sm:rounded-xl shadow-md p-4 sm:p-6 lg:p-8 mb-4 sm:mb-6 lg:mb-8">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6" style={{color: '#3a7e44'}}>Programme Chair & Co Chair</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6" style={{ color: '#3a7e44' }}>Programme Chair & Co Chair</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {programmeChair.map((item, index) => (
-              <div 
+              <div
                 key={index}
                 className="bg-secondary-100 rounded-lg p-4 sm:p-6 hover:shadow-md transition-shadow duration-300"
               >
-                <h3 className="text-lg sm:text-xl font-semibold mb-2" style={{color: '#3a7e44'}}>
+                <h3 className="text-lg sm:text-xl font-semibold mb-2" style={{ color: '#3a7e44' }}>
                   {item.name}
                 </h3>
                 <p className="text-sm sm:text-base text-text-secondary">
@@ -187,14 +187,14 @@ function Committe() {
 
         {/* Convener Section */}
         <div className="bg-background-primary rounded-lg sm:rounded-xl shadow-md p-4 sm:p-6 lg:p-8 mb-4 sm:mb-6 lg:mb-8">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6" style={{color: '#3a7e44'}}>Convener</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6" style={{ color: '#3a7e44' }}>Convener</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {convener.map((item, index) => (
-              <div 
+              <div
                 key={index}
                 className="bg-secondary-100 rounded-lg p-4 sm:p-6 hover:shadow-md transition-shadow duration-300"
               >
-                <h3 className="text-lg sm:text-xl font-semibold mb-2" style={{color: '#3a7e44'}}>
+                <h3 className="text-lg sm:text-xl font-semibold mb-2" style={{ color: '#3a7e44' }}>
                   {item.name}
                 </h3>
                 <p className="text-sm sm:text-base text-text-secondary">
@@ -207,14 +207,14 @@ function Committe() {
 
         {/* Co Convener Section */}
         <div className="bg-background-primary rounded-lg sm:rounded-xl shadow-md p-4 sm:p-6 lg:p-8 mb-4 sm:mb-6 lg:mb-8">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6" style={{color: '#3a7e44'}}>Co Convener</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6" style={{ color: '#3a7e44' }}>Co Convener</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {coConvener.map((item, index) => (
-              <div 
+              <div
                 key={index}
                 className="bg-secondary-100 rounded-lg p-4 sm:p-6 hover:shadow-md transition-shadow duration-300"
               >
-                <h3 className="text-lg sm:text-xl font-semibold mb-2" style={{color: '#3a7e44'}}>
+                <h3 className="text-lg sm:text-xl font-semibold mb-2" style={{ color: '#3a7e44' }}>
                   {item.name}
                 </h3>
                 <p className="text-sm sm:text-base text-text-secondary">
@@ -227,14 +227,14 @@ function Committe() {
 
         {/* Organizing Committee Section */}
         <div className="bg-background-primary rounded-lg sm:rounded-xl shadow-md p-4 sm:p-6 lg:p-8 mb-4 sm:mb-6 lg:mb-8">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6" style={{color: '#3a7e44'}}>Organizing Committee</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6" style={{ color: '#3a7e44' }}>Organizing Committee</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {organizingCommittee.map((item, index) => (
-              <div 
+              <div
                 key={index}
                 className="bg-secondary-100 rounded-lg p-4 sm:p-6 hover:shadow-md transition-shadow duration-300"
               >
-                <h3 className="text-lg sm:text-xl font-semibold mb-2" style={{color: '#3a7e44'}}>
+                <h3 className="text-lg sm:text-xl font-semibold mb-2" style={{ color: '#3a7e44' }}>
                   {item.name}
                 </h3>
                 <p className="text-sm sm:text-base text-text-secondary">
