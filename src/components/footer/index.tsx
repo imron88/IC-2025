@@ -218,17 +218,6 @@ const Footer = () => {
             ))}
           </div>
         </div>
-
-        {/* Conference Badge */}
-        <div className="text-center mt-6 sm:mt-8">
-          <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-accent-500 to-secondary-500 
-                         px-4 sm:px-6 py-2 sm:py-3 rounded-full text-white font-medium text-xs sm:text-sm
-                         shadow-lg hover:shadow-xl transition-all duration-300">
-            <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
-            <span>International Conference 2026</span>
-            <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
-          </div>
-        </div>
       </div>
     </footer>
   );
