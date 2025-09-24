@@ -61,10 +61,10 @@ const Footer = () => {
               </div>
               <div>
                 <h2 className="text-lg sm:text-xl lg:text-2xl font-bold tracking-wide">
-                  ICIDLHV2026
+                  ICIDLHV 2026
                 </h2>
                 <p className="text-xs sm:text-sm text-secondary-200 font-medium">
-                  International Conference on Sustainable & Intelligent Computing
+                  International Conference on Research Trends of ICT using Digital Libraries with Human Values & Ethics
                 </p>
               </div>
             </Link>
@@ -77,7 +77,7 @@ const Footer = () => {
               </p>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4">
                 <p className="text-white text-sm sm:text-base font-medium leading-relaxed">
-                  Join us for the 2nd International Conference on Sustainable & Intelligent Computing 
+                  Join us for the 2nd International Conference on Research Trends of ICT using Digital Libraries with Human Values & Ethics 
                   in Science and Technology at PIET.
                 </p>
               </div>
