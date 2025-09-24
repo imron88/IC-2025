@@ -12,6 +12,8 @@ function Profile() {
             className="h-24 w-24 rounded-full"
             src="/profile.png"
             alt="Profile Image"
+            width={192}
+            height={192}
           />
           <div>
             <h1 className="text-2xl font-semibold">Dr. Dinesh Goyal</h1>

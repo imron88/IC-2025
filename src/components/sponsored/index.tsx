@@ -35,6 +35,8 @@ function Sponsored() {
                   <Image
                     src={sponsor.image}
                     alt={sponsor.alt}
+                    width={192}
+                    height={192}
                     fill
                     className="object-contain p-2 sm:p-4 transition-transform duration-300 group-hover:scale-110"
                     sizes="(max-width: 640px) 8rem, (max-width: 1024px) 10rem, 12rem"

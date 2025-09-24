@@ -428,6 +428,8 @@ const Home = () => {
                     <Image
                       src={src}
                       alt="Conference venue and location images"
+                      width={1920}
+                      height={1080}
                       className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-300"
                     />
                   </div>
