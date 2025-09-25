@@ -109,10 +109,10 @@ const Footer = () => {
                   <RiPhoneFill className="text-white text-lg" />
                 </div>
                 <a
-                  href="tel:+91-8118874724"
+                  href="tel:+91-9950809459"
                   className="text-secondary-200 hover:text-white text-sm sm:text-base transition-colors duration-300 font-medium"
                 >
-                  +91-8118874724
+                  +91-9950809459
                 </a>
               </div>
 
