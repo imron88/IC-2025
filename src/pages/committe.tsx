@@ -73,6 +73,10 @@ function Committe() {
 
   const organizingCommittee = [
     {
+      name: "Dr. Prince Dawar",
+      designation: "Assoc. Professor, Humanities",
+    },
+    {
       name: "Mr. Ashok Sharma",
       designation: "Librarian, PIET",
     },
@@ -220,7 +224,7 @@ function Committe() {
     <>
       <Head>
         <title>
-          Committees - ICIDLHV- International Conference on Research Trends of ICT using Digital Libraries with Human Values & Ethics
+          Committees - ICIDLHV - International Conference on Research Trends of ICT using Digital Libraries with Human Values & Ethics
         </title>
         <link rel="icon" href="/gallery/favicon.ico" />
       </Head>
