@@ -14,6 +14,18 @@ function Committe() {
 
   const pietAdvisoryCommittee = [
     {
+      name: "Dr. Balwan",
+      designation: "Registrar & Chief Proctor, PIET",
+    },
+    {
+      name: "Dr. Amit Shrivastav",
+      designation: "CoE, PIET",
+    },
+    {
+      name: "Dr. Mukesh Chandra",
+      designation: "Co-ordinators, IQAC PIET",
+    },
+    {
       name: "Dr. Anil Kumar",
       designation: "HoD, CSE, PIET",
     },
@@ -25,28 +37,16 @@ function Committe() {
       name: "Dr. Payal Bansal",
       designation: "HoD, IoT, PIET",
     },
-    {
-      name: "Dr. Mukesh Chandra",
-      designation: "Co-ordinators, IQAC PIET",
-    },
-    {
-      name: "Dr. Amit Shrivastav",
-      designation: "CoE, PIET",
-    },
   ];
 
   const conferenceChair = [
     {
-      name: "Dr. Balwan",
-      designation: "Registrar & Chief Proctor, PIET",
-    },
-  ];
-
-  const programmeChair = [
-    {
       name: "Dr. Sama Jain",
       designation: "HoD, Department of Applied Science, PIET",
     },
+  ];
+
+  const conferenceCoChair = [
     {
       name: "Dr. Bhanu Pratap",
       designation: "Associate Professor, PIET",
@@ -59,27 +59,19 @@ function Committe() {
 
   const convener = [
     {
-      name: "Dr. Sama Jain",
-      designation: "HoD, Department of Applied Science, PIET",
+      name: "Prof. (Dr) Krati Sharma",
+      designation: "Professor, PIET",
     },
   ];
 
   const coConvener = [
     {
-      name: "Prof. (Dr) Krati Sharma",
-      designation: "Professor, PIET",
-    },
-    {
-      name: "Dr. Prince Dawar",
-      designation: "Associate Prof., PIET",
+      name: "Ms. Suman Jain",
+      designation: "Chief Librarian, PIET",
     },
   ];
 
   const organizingCommittee = [
-    {
-      name: "Ms. Suman Jain",
-      designation: "Chief Librarian, PIET",
-    },
     {
       name: "Mr. Ashok Sharma",
       designation: "Librarian, PIET",
@@ -299,7 +291,7 @@ function Committe() {
         <div className="bg-background-primary rounded-lg sm:rounded-xl shadow-md p-4 sm:p-6 lg:p-8 mb-4 sm:mb-6 lg:mb-8">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6" style={{ color: '#3a7e44' }}>Programme Chair & Co Chair</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            {programmeChair.map((item, index) => (
+            {conferenceCoChair.map((item, index) => (
               <div
                 key={index}
                 className="bg-secondary-100 rounded-lg p-4 sm:p-6 hover:shadow-md transition-shadow duration-300"
