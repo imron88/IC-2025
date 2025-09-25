@@ -18,35 +18,6 @@ function Publications() {
       <br />
 
       <main className="bg-gradient-to-b from-background-primary to-white px-8 pt-7">
-        {/* Coming Soon Section */}
-        {/* <div className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <div className="flex flex-col items-center justify-center min-h-[300px] text-center"> */}
-        {/* <div className="bg-blue-50 rounded-full p-8 mb-6">
-              <svg 
-                className="w-16 h-16 text-blue-500" 
-                fill="none" 
-                stroke="currentColor" 
-                viewBox="0 0 24 24" 
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  strokeWidth={2} 
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" 
-                />
-              </svg>
-            </div>
-            <h1 className="text-3xl font-bold text-gray-900 mb-4">
-              Coming Soon
-            </h1> */}
-        {/* <p className="text-gray-600 text-lg max-w-2xl">
-            All selected papers will be published in Scopus Indexed Conference Proceedings. <br />
-            For UG/PG Authors, only extended papers followed by blind review will be considered for publication.
-
-            </p>
-          </div>
-        </div> */}
         <div className="bg-background-primary rounded-lg sm:rounded-xl shadow-md p-4 sm:p-6 lg:p-8 mb-4 sm:mb-6 lg:mb-8">
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 text-text-primary">All selected papers will be published in :</h1>
 
