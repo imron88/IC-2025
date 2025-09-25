@@ -121,6 +121,117 @@ function Committe() {
     },
   ];
 
+  const nationalAdvisoryCommittee = [
+    {
+      name: "Dr. Rajesh Singh",
+      designation: "University Librarian, University of Delhi, Delhi",
+    },
+    {
+      name: "Dr. P. K. Jain",
+      designation: "Librarian, Institute of Economic Growth, University of Delhi, Delhi",
+    },
+    {
+      name: "Prof. R. C. Gaur",
+      designation: "Dean and Director, IGNCA, New Delhi",
+    },
+    {
+      name: "Prof. M. P. Singh",
+      designation: "Dean and Professor, Department of Library and Information Science, Babasaheb Bhimrao Ambedkar University, Lucknow, U.P.",
+    },
+    {
+      name: "Dr. P. R. Goswami",
+      designation: "Former Director (Library), Ministry of Culture, New Delhi",
+    },
+    {
+      name: "Dr. Debal C. Kar",
+      designation: "Dean and University Librarian, Galgotias University, Greater Noida, U.P.",
+    },
+    {
+      name: "Dr. Nabi Hasan",
+      designation: "Librarian, IIT Delhi",
+    },
+    {
+      name: "Dr. Priya Rai",
+      designation: "Librarian, National Law University, Delhi",
+    },
+    {
+      name: "Dr. R. K. Sharma",
+      designation: "Former Director General, Delhi Public Library, Delhi",
+    },
+    {
+      name: "Prof. Hemant Sharma",
+      designation: "Department of Library and Information Science, Jiwaji University, Gwalior, M.P.",
+    },
+    {
+      name: "Dr. Parveen Babbar",
+      designation: "Deputy Librarian, JNU, Delhi",
+    },
+    {
+      name: "Mr. N. K. Wadhwa",
+      designation: "Former Chief Scientist, CSIR-National Physical Laboratory, New Delhi",
+    },
+    {
+      name: "Dr. Shiva Kanojia Shukla",
+      designation: "Deputy Librarian, JNU, Delhi",
+    },
+    {
+      name: "Dr. Dinesh Kumar",
+      designation: "Deputy Librarian, AUD, Delhi",
+    },
+    {
+      name: "Dr. Santosh Gupta",
+      designation: "Assistant Professor, University of Rajasthan, Jaipur",
+    },
+    {
+      name: "Dr. Akash Singh",
+      designation: "Assistant Librarian, National Law University, Delhi",
+    },
+    {
+      name: "Dr. Neelu Jain",
+      designation: "Assistant Professor, Manipal University, Jaipur",
+    },
+    {
+      name: "Dr. Pooja Joshi",
+      designation: "Assistant Professor, University of Rajasthan, Jaipur",
+    },
+    {
+      name: "Dr. Tanjeen Ara Khan",
+      designation: "Principal In-Charge, Bastar, Chhattisgarh",
+    },
+    {
+      name: "Dr. Anupam Chauhan",
+      designation: "Assistant Professor, Central University, Bilaspur",
+    },
+    {
+      name: "Dr. Anita Sharma",
+      designation: "Professor, Banaras Hindu University, U.P.",
+    },
+    {
+      name: "Dr. Shalini Yadav",
+      designation: "Assistant Professor, Maharani's College, University of Rajasthan, Jaipur",
+    },
+    {
+      name: "Dr. Deepa Mathur",
+      designation: "Head of Department, Department of English, University of Rajasthan, Jaipur",
+    },
+    {
+      name: "Dr. Mohit Jangir",
+      designation: "Assistant Professor, Department of English, University of Rajasthan, Jaipur",
+    },
+    {
+      name: "Dr. Rashmi Jain",
+      designation: "Director, MMTTP, University of Rajasthan, Jaipur",
+    },
+    {
+      name: "Dr. Anil Aaniket",
+      designation: "Director, SSRC, University of Rajasthan, Jaipur",
+    },
+    {
+      name: "Dr. Jai Singh",
+      designation: "Director, Department of Lifelong Learning, University of Rajasthan, Jaipur",
+    },
+  ];
+
   return (
     <>
       <Head>
@@ -257,6 +368,26 @@ function Committe() {
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6" style={{ color: '#3a7e44' }}>International Advisory Committee</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {internationalAdvisoryCommittee.map((item, index) => (
+              <div
+                key={index}
+                className="bg-secondary-100 rounded-lg p-4 sm:p-6 hover:shadow-md transition-shadow duration-300"
+              >
+                <h3 className="text-lg sm:text-xl font-semibold mb-2" style={{ color: '#3a7e44' }}>
+                  {item.name}
+                </h3>
+                <p className="text-sm sm:text-base text-text-secondary">
+                  {item.designation}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* National Advisory Committee Section */}
+        <div className="bg-background-primary rounded-lg sm:rounded-xl shadow-md p-4 sm:p-6 lg:p-8 mb-4 sm:mb-6 lg:mb-8">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6" style={{ color: '#3a7e44' }}>National Advisory Committee</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            {nationalAdvisoryCommittee.map((item, index) => (
               <div
                 key={index}
                 className="bg-secondary-100 rounded-lg p-4 sm:p-6 hover:shadow-md transition-shadow duration-300"
