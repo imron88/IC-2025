@@ -30,7 +30,7 @@ const callForPapers = () => {
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
-            
+
             {/* Track 1: Digital Libraries & Information Systems */}
             <div className="bg-secondary-100 rounded-lg p-4 sm:p-6">
               <h3 className="text-xl sm:text-2xl font-bold mb-4" style={{ color: '#3a7e44' }}>Digital Libraries & Information Systems</h3>
