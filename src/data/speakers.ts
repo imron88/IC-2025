@@ -83,4 +83,11 @@ export const speakers = [
         "id": "18",
         "national": true
     },
+    {
+        "name": "Prof. G. A. Ghanshyam",
+        "designation": "Joint Director Directorate of Higher Education, Chhattisgarh, Raipur",
+        "image": "/gallery/keynote_speakers/rishi.jpeg",
+        "id": "19",
+        "national": true
+    },
 ]
