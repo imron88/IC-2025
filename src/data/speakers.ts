@@ -118,4 +118,11 @@ export const speakers = [
         "id": "17",
         "national": true
     },
+    {
+        "name": "Dr. Anita Singh",
+        "designation": "Professor & Head, Department of English, Banaras Hindu University",
+        "image": "/gallery/keynote_speakers/anita.jpg",
+        "id": "18",
+        "national": true
+    },
 ]
