@@ -4,7 +4,7 @@ export const speakers = [
         "designation": "IFLA Special Interest Group : LIS in Developing Country at International Federation of Library Associations and Institutions (IFLA)",
         "image": "/gallery/keynote_speakers/labibah.jpeg",
         "id": "1",
-        "national": true
+        "national": false
     },
     {
         "name": "Nabi Hasan",
@@ -37,7 +37,7 @@ export const speakers = [
     {
         "name": "Dr. Neeraj Chaurasia",
         "designation": "Deputy Librarian, Indian Institute of Technology Delhi(IIT Delhi)",
-        "image": "/gallery/keynote_speakers/neeraj.jpeg",
+        "image": "/gallery/keynote_speakers/neeraj.jpg",
         "id": "6",
         "national": true
     },
@@ -107,7 +107,7 @@ export const speakers = [
     {
         "name": "Dr. Richa Arora",
         "designation": "Professor & Head, Department of Liberal Arts & Social Sciences, Manipal University Jaipur",
-        "image": "/gallery/keynote_speakers/richa.jpg",
+        "image": "/gallery/keynote_speakers/richaarora.jpg",
         "id": "16",
         "national": true
     },
