@@ -58,7 +58,7 @@ export const speakers = [
     {
         "name": "Dr. Sonal Singh",
         "designation": "Librarian",
-        "image": "/gallery/keynote_speakers/anshu.jpg",
+        "image": "/gallery/keynote_speakers/sonal.avif",
         "id": "9",
         "national": true
     },
@@ -74,6 +74,13 @@ export const speakers = [
         "designation": "Deputy Librarian at Jawaharlal Nehru University",
         "image": "/gallery/keynote_speakers/praveenb.jpeg",
         "id": "11",
+        "national": true
+    },
+    {
+        "name": "Dr. P.S. Rajput",
+        "designation": "Assistant Professor & In-Charge Head  Department of Library and Information Science, Mohanlal Sukhadia University",
+        "image": "/gallery/keynote_speakers/ps.jpeg",
+        "id": "19",
         "national": true
     },
     {
