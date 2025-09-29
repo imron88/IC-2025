@@ -8,7 +8,7 @@ const Speakers = () => {
   return (
     <>
       <Head>
-        <title>Keynote Speakers - ICSICST</title>
+        <title>Speakers - ICSICST</title>
         <link rel="icon" href="/gallery/favicon.ico" />
       </Head>
       {/* <Schedule /> */}
@@ -20,7 +20,7 @@ const Speakers = () => {
           <div className="text-center mb-12 lg:mb-16">
             <div className="bg-white/70 backdrop-blur-sm rounded-2xl shadow-lg border border-primary-100 p-8 lg:p-12 mb-8">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-text-primary">
-                Keynote Speakers
+                Speakers
               </h1>
               <div className="flex items-center justify-center mb-4">
                 <div className="h-1 w-12 bg-primary-300 rounded-full"></div>
