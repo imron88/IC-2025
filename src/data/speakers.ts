@@ -65,7 +65,7 @@ export const speakers = [
     {
         "name": "Sonal Singh",
         "designation": "Librarian",
-        "image": "/gallery/keynote_speakers/anshu.jpg",
+        "image": "/gallery/keynote_speakers/sonal.avif",
         "id": "16",
         "national": true
     },
