@@ -70,7 +70,7 @@ const Home = () => {
     },
     {
       image: "/clg3.jpg",
-      id: "m3n4o5p6",
+      id: "m3n4o5p7",
       alt: "College Infrastructure",
       title: "Research Facilities"
     },
