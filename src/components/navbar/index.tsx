@@ -127,7 +127,7 @@ function Index() {
       enabled: true,
     },
     {
-      title: "Keynote Speakers",
+      title: "Speakers",
       link: "/speakers",
       enabled: true,
     },
