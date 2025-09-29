@@ -57,7 +57,7 @@ export const speakers = [
     },
     {
         "name": "Dr. Sonal Singh",
-        "designation": "Librarian",
+        "designation": "Associate Professor and Head at S. S. in Library and Information Science, Vikram University",
         "image": "/gallery/keynote_speakers/sonal.avif",
         "id": "9",
         "national": true
