@@ -1,20 +1,20 @@
 export const speakers = [
     {
-        "name": "Labibah Zain",
+        "name": "Dr. Labibah Zain",
         "designation": "IFLA Special Interest Group : LIS in Developing Country at International Federation of Library Associations and Institutions (IFLA)",
         "image": "/gallery/keynote_speakers/labibah.jpeg",
         "id": "1",
         "national": false
     },
     {
-        "name": "Nabi Hasan",
+        "name": "Dr. Nabi Hasan",
         "designation": "Head Librarian/Central Library, IIT Delhi",
         "image": "/gallery/keynote_speakers/nabi.jpeg",
         "id": "2",
         "national": true
     },
     {
-        "name": "Kishor Chandra Satpathy",
+        "name": "Dr. Kishor Chandra Satpathy",
         "designation": "Chief Librarian at Indian Statistical Institute, Kolkata",
         "image": "/gallery/keynote_speakers/kishor.jpeg",
         "id": "3",
@@ -49,14 +49,14 @@ export const speakers = [
         "national": true
     },
     {
-        "name": "Rajesh Singh",
+        "name": "Dr. Rajesh Singh",
         "designation": "Librarian at University of Delhi",
         "image": "/gallery/keynote_speakers/rajesh.jpeg",
         "id": "8",
         "national": true
     },
     {
-        "name": "Sonal Singh",
+        "name": "Dr. Sonal Singh",
         "designation": "Librarian",
         "image": "/gallery/keynote_speakers/anshu.jpg",
         "id": "9",
@@ -70,14 +70,14 @@ export const speakers = [
         "national": true
     },
     {
-        "name": "Parveen Babbar",
+        "name": "Dr. Parveen Babbar",
         "designation": "Deputy Librarian at Jawaharlal Nehru University",
         "image": "/gallery/keynote_speakers/praveenb.jpeg",
         "id": "11",
         "national": true
     },
     {
-        "name": "Santosh Gupta",
+        "name": "Dr. Santosh Gupta",
         "designation": "Assistant Professor at University of Rajasthan",
         "image": "/gallery/keynote_speakers/santosh.jpeg",
         "id": "12",
