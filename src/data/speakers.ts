@@ -91,24 +91,31 @@ export const speakers = [
         "national": true
     },
     {
+        "name": "Dr. Qumar Abbas",
+        "designation": "Deputy Librarian, Govt.J. L. N. Medical College Ajmer",
+        "image": "/gallery/keynote_speakers/qumar.jpeg",
+        "id": "14",
+        "national": true
+    },
+    {
         "name": "Prof. G. A. Ghanshyam",
         "designation": "Joint Director Directorate of Higher Education, Chhattisgarh, Raipur",
         "image": "/gallery/keynote_speakers/ghanshyam.jpg",
-        "id": "14",
+        "id": "15",
         "national": true
     },
     {
         "name": "DR. Mohit Jeengar",
         "designation": "Assistant Professor in the Department of English at the University of Rajasthan, Jaipur",
         "image": "/gallery/keynote_speakers/mohit.jpg",
-        "id": "15",
+        "id": "16",
         "national": true
     },
     {
         "name": "Dr. Richa Arora",
         "designation": "Professor & Head, Department of Liberal Arts & Social Sciences, Manipal University Jaipur",
-        "image": "/gallery/keynote_speakers/richaarora.jpg",
-        "id": "16",
+        "image": "/gallery/keynote_speakers/richa.jpg",
+        "id": "17",
         "national": true
     },
 ]
