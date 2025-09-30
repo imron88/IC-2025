@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>https://icac3n.in/</loc>
-  <lastmod>2024-04-30T12:34:43+00:00</lastmod>
+  <loc>https://icidlhv2026.in/</loc>
+  <lastmod>2025-09-30T12:00:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://icac3n.in/register</loc>
-  <lastmod>2024-04-30T12:34:43+00:00</lastmod>
+  <loc>https://icidlhv2026.in/register</loc>
+  <lastmod>2025-09-30T12:00:00+00:00</lastmod>
   <priority>0.90</priority>
 </url>
 <url>
-  <loc>https://icac3n.in/about</loc>
-  <lastmod>2024-04-30T12:34:43+00:00</lastmod>
-  <priority>0.95</priority>
+  <loc>https://icidlhv2026.in/call-for-papers</loc>
+  <lastmod>2025-09-30T12:00:00+00:00</lastmod>
+  <priority>0.85</priority>
 </url>
 <url>
-  <loc>https://icac3n.in/guidelines</loc>
-  <lastmod>2024-04-30T12:34:43+00:00</lastmod>
+  <loc>https://icidlhv2026.in/paper-submission</loc>
+  <lastmod>2025-09-30T12:00:00+00:00</lastmod>
+  <priority>0.85</priority>
+</url>
+<url>
+  <loc>https://icidlhv2026.in/committe</loc>
+  <lastmod>2025-09-30T12:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://icac3n.in/speakers</loc>
-  <lastmod>2024-04-30T12:34:43+00:00</lastmod>
+  <loc>https://icidlhv2026.in/guidelines</loc>
+  <lastmod>2025-09-30T12:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://icac3n.in/call-for-papers</loc>
-  <lastmod>2024-04-30T12:34:43+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://icidlhv2026.in/publications</loc>
+  <lastmod>2025-09-30T12:00:00+00:00</lastmod>
+  <priority>0.75</priority>
 </url>
 <url>
-  <loc>https://icac3n.in/contact</loc>
-  <lastmod>2024-04-30T12:34:43+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://icidlhv2026.in/speakers</loc>
+  <lastmod>2025-09-30T12:00:00+00:00</lastmod>
+  <priority>0.75</priority>
 </url>
 <url>
-  <loc>https://icac3n.in/documents/PAPER_ID_ICAC3N23.docx</loc>
-  <lastmod>2024-04-30T12:34:43+00:00</lastmod>
+  <loc>https://icidlhv2026.in/contact</loc>
+  <lastmod>2025-09-30T12:00:00+00:00</lastmod>
   <priority>0.70</priority>
-</url>
-<url>
-  <loc>https://icac3n.in/committee/organizing-committee</loc>
-  <lastmod>2024-04-30T12:34:43+00:00</lastmod>
-  <priority>0.80</priority>
 </url>
 
 </urlset>
