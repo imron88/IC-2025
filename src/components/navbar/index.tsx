@@ -160,7 +160,7 @@ function Index() {
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm">
           <div className="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-4 mb-1 sm:mb-0">
             <span className="text-secondary-200">📧 icidlhv2023@poornima.org</span>
-            <span className="text-secondary-200">📞 +91-9950809459</span>
+            <span className="text-secondary-200">📞 +91 8305750628, +91 9950809459, +91 8440964941, +91 9782908356</span>
           </div>
           <div className="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-2">
             <span className="text-secondary-200">📅 February 20-21, 2026</span>
