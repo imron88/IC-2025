@@ -159,7 +159,7 @@ const callForPapers = () => {
 
         {/* Why Attend Section */}
         <div className="bg-background-primary rounded-xl shadow-md p-4 sm:p-6 lg:p-8 mb-4 sm:mb-6 lg:mb-8">
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 sm:mb-6 text-text-primary">Why Attend IC-IDLHV 2026?</h2>
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 sm:mb-6 text-text-primary">Why Attend ICIDLHV 2026?</h2>
           <div className="space-y-3 sm:space-y-4">
             {[
               "Network with Experts: Connect with leading researchers, industry professionals, and academicians from around the world.",
