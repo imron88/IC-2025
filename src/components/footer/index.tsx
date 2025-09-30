@@ -45,7 +45,7 @@ const Footer = () => {
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent-400 via-secondary-400 to-accent-400"></div>
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-10 lg:py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 mb-8">
           {/* Logo and Description */}
           <div className="space-y-4 sm:space-y-6">
             <Link href="/" className="flex items-center space-x-3 group">
@@ -130,18 +130,18 @@ const Footer = () => {
                 </a>
               </div>
             </div>
+          </div>
 
-            {/* College Logo - Desktop */}
-            <div className="hidden md:flex justify-center mt-6">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
-                <Image
-                  width={180}
-                  height={115}
-                  src="/clglogo.png"
-                  className="object-contain filter drop-shadow-lg"
-                  alt="College Logo"
-                />
-              </div>
+          {/* College Logo - Desktop */}
+          <div className="hidden md:flex justify-center items-start">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 hover:bg-white/15 transition-all duration-300 transform hover:scale-105">
+              <Image
+                width={200}
+                height={130}
+                src="/clglogo.png"
+                className="object-contain filter drop-shadow-lg"
+                alt="College Logo"
+              />
             </div>
           </div>
 
