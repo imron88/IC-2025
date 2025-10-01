@@ -222,12 +222,26 @@ const Home = () => {
               <p className="text-justify leading-relaxed">
                 The changes in present society evolving as a knowledge society have very strong implications on the services of libraries. The advancement in Information & Communication Technologies coupled with social media applications have largely impacted Libraries and Information Centers. The emerging challenges posed by the contemporary environment, manifested in many forms such as digital repositories, big data, cloud computing, open access, user-centric services (e-learning, e-teaching, information literacy, orientation programs), web-based library services, application of social networking, library cooperation (including consortia), and IPR and legal issues, etc., are significant.
               </p>
+              <Image
+                      src="/bg.jpg"
+                      alt="Conference venue and location images"
+                      width={1200}
+                      height={600}
+                      className="object-cover transform hover:scale-105 transition-transform duration-300"
+                    />
               <p className="text-justify leading-relaxed">
                 Conspicuously, a variety of forces, most specifically economic changes and technological developments, have reshaped and transformed libraries from storehouses and data archives to information/knowledge centers and community spaces. The initiatives of government towards building a digital-based society, fostering skill development, and promoting a collaborative and shared ambience have virtually changed the very face of the present society.
               </p>
               <p className="text-justify leading-relaxed">
                 The conference theme is aptly selected to enable deliberations on the challenges faced by libraries and information centers. The fast-changing social, cultural, and economic environments pose different types of challenges for libraries and information centers, as they are a reflection of society. It is perceived that the deliberations in the conference will help in understanding newer avenues for teaching and learning with ample emphasis on e-Learning, e-Publishing, OERs, and MOOCs.
               </p>
+              <Image
+                      src="/bg2.jpg"
+                      alt="Conference venue and location images"
+                      width={1200}
+                      height={600}
+                      className="object-cover transform hover:scale-105 transition-transform duration-300"
+                    />
               <p className="text-justify leading-relaxed">
                 Libraries, as intermediaries, have a larger role to imbibe these advancements and changes and to develop services to help the academic community and the society cope with these developments. Research and innovation are constantly demanding availability of research data management and the search for newer strategies and techniques to adapt to the challenges. The changes in library and information services are inevitable, and so library professionals must get actively involved in the core missions and values of ICT-based tools and techniques.
               </p>
