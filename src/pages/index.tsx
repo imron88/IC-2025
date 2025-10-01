@@ -423,7 +423,7 @@ const Home = () => {
             <div className="md:w-1/2 space-y-4 sm:space-y-6">
               {/* Images section - wrapped in rounded corners and shadow */}
               {["/gallery/city_images/wtp.avif",
-                "/gallery/city_images/jaipur.jpg", "/gallery/city_images/jaipur-hd-img.webp", "/library.jpeg"].map((src, index) => (
+                "/gallery/city_images/jaipur.jpg", "/gallery/city_images/jaipur-hd-img.webp", "/piet.jpg", "/piet2.jpg"].map((src, index) => (
                   <div key={index} className="rounded-xl overflow-hidden shadow-lg">
                     <Image
                       src={src}
