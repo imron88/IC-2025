@@ -209,8 +209,8 @@ const Home = () => {
         <hr className="my-4 sm:my-6 lg:my-8 h-px border-0 bg-gray-200" />
 
         {/* Preamble Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
-          <div className="lg:col-span-3 prose prose-sm sm:prose-base lg:prose-lg max-w-none" style={{ color: '#3a7e44' }}>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
+          <div className="lg:col-span-2 prose prose-sm sm:prose-base lg:prose-lg max-w-none" style={{ color: '#3a7e44' }}>
             <h2 className="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-bold mb-3 sm:mb-4 lg:mb-6" style={{ color: '#3a7e44' }}>About Conference</h2>
             <div className="space-y-3 sm:space-y-4 text-sm sm:text-base lg:text-base">
               <p className="text-justify leading-relaxed">
@@ -222,34 +222,12 @@ const Home = () => {
               <p className="text-justify leading-relaxed">
                 The changes in present society evolving as a knowledge society have very strong implications on the services of libraries. The advancement in Information & Communication Technologies coupled with social media applications have largely impacted Libraries and Information Centers. The emerging challenges posed by the contemporary environment, manifested in many forms such as digital repositories, big data, cloud computing, open access, user-centric services (e-learning, e-teaching, information literacy, orientation programs), web-based library services, application of social networking, library cooperation (including consortia), and IPR and legal issues, etc., are significant.
               </p>
-              <div className="my-6 sm:my-8 lg:my-10 rounded-xl overflow-hidden shadow-lg bg-white border border-gray-100">
-                <Image
-                  src="/bg.JPG"
-                  alt="Conference venue and location images"
-                  width={1200}
-                  height={600}
-                  className="w-full h-auto object-cover transform hover:scale-105 transition-all duration-500 ease-in-out"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 80vw"
-                  priority={false}
-                />
-              </div>
               <p className="text-justify leading-relaxed">
                 Conspicuously, a variety of forces, most specifically economic changes and technological developments, have reshaped and transformed libraries from storehouses and data archives to information/knowledge centers and community spaces. The initiatives of government towards building a digital-based society, fostering skill development, and promoting a collaborative and shared ambience have virtually changed the very face of the present society.
               </p>
               <p className="text-justify leading-relaxed">
                 The conference theme is aptly selected to enable deliberations on the challenges faced by libraries and information centers. The fast-changing social, cultural, and economic environments pose different types of challenges for libraries and information centers, as they are a reflection of society. It is perceived that the deliberations in the conference will help in understanding newer avenues for teaching and learning with ample emphasis on e-Learning, e-Publishing, OERs, and MOOCs.
               </p>
-              <div className="my-6 sm:my-8 lg:my-10 rounded-xl overflow-hidden shadow-lg bg-white border border-gray-100">
-                <Image
-                  src="/bg2.jpg"
-                  alt="Conference venue and location images"
-                  width={1200}
-                  height={600}
-                  className="w-full h-auto object-cover transform hover:scale-105 transition-all duration-500 ease-in-out"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 80vw"
-                  priority={false}
-                />
-              </div>
               <p className="text-justify leading-relaxed">
                 Libraries, as intermediaries, have a larger role to imbibe these advancements and changes and to develop services to help the academic community and the society cope with these developments. Research and innovation are constantly demanding availability of research data management and the search for newer strategies and techniques to adapt to the challenges. The changes in library and information services are inevitable, and so library professionals must get actively involved in the core missions and values of ICT-based tools and techniques.
               </p>
@@ -260,67 +238,112 @@ const Home = () => {
             <hr className="my-4 sm:my-6 lg:my-8 h-px border-0 bg-gray-200" />
           </div>
 
-          {/* Collaboration Section */}
+          {/* Conference Images Section */}
           <div className="lg:col-span-1">
-            <div className="bg-gradient-to-br from-background-primary to-white rounded-xl shadow-lg border border-gray-100 p-3 sm:p-4 lg:p-6 relative overflow-hidden h-fit">
-              {/* Background decoration */}
-              <div className="absolute top-0 right-0 w-12 sm:w-16 lg:w-20 h-12 sm:h-16 lg:h-20 bg-primary-100 rounded-full -translate-y-6 sm:-translate-y-8 lg:-translate-y-10 translate-x-6 sm:translate-x-8 lg:translate-x-10 opacity-50"></div>
-              <div className="absolute bottom-0 left-0 w-10 sm:w-12 lg:w-16 h-10 sm:h-12 lg:h-16 bg-secondary-100 rounded-full translate-y-5 sm:translate-y-6 lg:translate-y-8 -translate-x-5 sm:-translate-x-6 lg:-translate-x-8 opacity-50"></div>
-
-              <div className="relative z-10">
-                <div className="text-center mb-4 sm:mb-6">
-                  <h2 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent">
-                    In Collaboration With
-                  </h2>
-                  <div className="w-16 sm:w-20 lg:w-24 h-0.5 sm:h-1 bg-gradient-to-r from-primary-500 to-secondary-500 mx-auto rounded-full"></div>
+            <div className="sticky top-8 space-y-6 sm:space-y-8 lg:space-y-10">
+              <div className="group relative overflow-hidden rounded-2xl shadow-2xl bg-gradient-to-br from-white to-gray-50 border border-gray-200 hover:shadow-3xl transition-all duration-700 ease-out">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary-500/10 to-secondary-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative p-2 sm:p-3">
+                  <Image
+                    src="/bg.JPG"
+                    alt="Conference venue and location images"
+                    width={1200}
+                    height={600}
+                    className="w-full h-auto object-cover rounded-xl transform group-hover:scale-105 transition-all duration-700 ease-out"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 50vw"
+                    priority={false}
+                  />
                 </div>
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent p-4 sm:p-6">
+                  <h3 className="text-white text-sm sm:text-base lg:text-lg font-semibold drop-shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    Conference Venue
+                  </h3>
+                </div>
+              </div>
+              
+              <div className="group relative overflow-hidden rounded-2xl shadow-2xl bg-gradient-to-br from-white to-gray-50 border border-gray-200 hover:shadow-3xl transition-all duration-700 ease-out">
+                <div className="absolute inset-0 bg-gradient-to-br from-secondary-500/10 to-primary-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="relative p-2 sm:p-3">
+                  <Image
+                    src="/bg2.jpg"
+                    alt="Conference venue and location images"
+                    width={1200}
+                    height={600}
+                    className="w-full h-auto object-cover rounded-xl transform group-hover:scale-105 transition-all duration-700 ease-out"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 70vw, 50vw"
+                    priority={false}
+                  />
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent p-4 sm:p-6">
+                  <h3 className="text-white text-sm sm:text-base lg:text-lg font-semibold drop-shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    Event Highlights
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                <div className="bg-white/80 backdrop-blur-sm rounded-xl p-3 sm:p-4 shadow-inner border border-gray-50">
-                  <div className="flex h-[200px] sm:h-[240px] lg:h-[280px] w-full overflow-hidden rounded-lg">
-                    <Carousel
-                      autoPlay={true}
-                      interval={4000}
-                      loop={true}
-                      renderArrowLeft={() => null}
-                      renderArrowRight={() => null}
-                      renderDots={({ setActiveIndex, activeIndex }) => {
-                        return (
-                          <div className="absolute bottom-2 sm:bottom-4 left-0 right-0 flex items-center justify-center gap-1.5 sm:gap-2">
-                            {logoImages.map((_, index) => (
-                              <button
-                                key={index}
-                                onClick={() => setActiveIndex(index)}
-                                className={`h-2 sm:h-3 transition-all duration-300 rounded-full
-                                  ${index === activeIndex
-                                    ? 'bg-primary-500 w-6 sm:w-8 shadow-lg'
-                                    : 'bg-white/60 w-2 sm:w-3 hover:bg-white/80 hover:w-3 sm:hover:w-4'}`}
-                                aria-label={`Go to collaboration slide ${index + 1}`}
-                              />
-                            ))}
-                          </div>
-                        );
-                      }}
-                    >
-                      {logoImages.map((image, index) => (
-                        <div
-                          key={index}
-                          className="flex h-full w-full items-center justify-center p-4 sm:p-6 lg:p-8"
-                        >
-                          <div className="relative group">
-                            <div className="absolute inset-0 bg-gradient-to-r from-primary-200 to-secondary-200 rounded-xl blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
-                            <Image
-                              height={300}
-                              width={400}
-                              draggable={false}
-                              className="relative max-h-[160px] sm:max-h-[200px] lg:max-h-[240px] w-auto object-contain drop-shadow-xl transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-2xl rounded-lg"
-                              src={image.image}
-                              alt={image.alt || "Publication Partner Logo"}
+        {/* Collaboration Section */}
+        <div className="mt-8 sm:mt-12">
+          <div className="bg-gradient-to-br from-background-primary to-white rounded-xl shadow-lg border border-gray-100 p-3 sm:p-4 lg:p-6 relative overflow-hidden">
+            {/* Background decoration */}
+            <div className="absolute top-0 right-0 w-12 sm:w-16 lg:w-20 h-12 sm:h-16 lg:h-20 bg-primary-100 rounded-full -translate-y-6 sm:-translate-y-8 lg:-translate-y-10 translate-x-6 sm:translate-x-8 lg:translate-x-10 opacity-50"></div>
+            <div className="absolute bottom-0 left-0 w-10 sm:w-12 lg:w-16 h-10 sm:h-12 lg:h-16 bg-secondary-100 rounded-full translate-y-5 sm:translate-y-6 lg:translate-y-8 -translate-x-5 sm:-translate-x-6 lg:-translate-x-8 opacity-50"></div>
+
+            <div className="relative z-10">
+              <div className="text-center mb-4 sm:mb-6">
+                <h2 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent">
+                  In Collaboration With
+                </h2>
+                <div className="w-16 sm:w-20 lg:w-24 h-0.5 sm:h-1 bg-gradient-to-r from-primary-500 to-secondary-500 mx-auto rounded-full"></div>
+              </div>
+
+              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-3 sm:p-4 shadow-inner border border-gray-50">
+                <div className="flex h-[200px] sm:h-[240px] lg:h-[280px] w-full overflow-hidden rounded-lg justify-center">
+                  <Carousel
+                    autoPlay={true}
+                    interval={4000}
+                    loop={true}
+                    renderArrowLeft={() => null}
+                    renderArrowRight={() => null}
+                    renderDots={({ setActiveIndex, activeIndex }) => {
+                      return (
+                        <div className="absolute bottom-2 sm:bottom-4 left-0 right-0 flex items-center justify-center gap-1.5 sm:gap-2">
+                          {logoImages.map((_, index) => (
+                            <button
+                              key={index}
+                              onClick={() => setActiveIndex(index)}
+                              className={`h-2 sm:h-3 transition-all duration-300 rounded-full
+                                ${index === activeIndex
+                                  ? 'bg-primary-500 w-6 sm:w-8 shadow-lg'
+                                  : 'bg-white/60 w-2 sm:w-3 hover:bg-white/80 hover:w-3 sm:hover:w-4'}`}
+                              aria-label={`Go to collaboration slide ${index + 1}`}
                             />
-                          </div>
+                          ))}
                         </div>
-                      ))}
-                    </Carousel>
-                  </div>
+                      );
+                    }}
+                  >
+                    {logoImages.map((image, index) => (
+                      <div
+                        key={index}
+                        className="flex h-full w-full items-center justify-center p-4 sm:p-6 lg:p-8"
+                      >
+                        <div className="relative group">
+                          <div className="absolute inset-0 bg-gradient-to-r from-primary-200 to-secondary-200 rounded-xl blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
+                          <Image
+                            height={300}
+                            width={400}
+                            draggable={false}
+                            className="relative max-h-[160px] sm:max-h-[200px] lg:max-h-[240px] w-auto object-contain drop-shadow-xl transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-2xl rounded-lg"
+                            src={image.image}
+                            alt={image.alt || "Publication Partner Logo"}
+                          />
+                        </div>
+                      </div>
+                    ))}
+                  </Carousel>
                 </div>
               </div>
             </div>
