@@ -394,7 +394,7 @@ const Home = () => {
             {/* About Poornima Institute */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-start">
               <div>
-                <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4" style={{ color: '#3a7e44' }}>About Poornima Institute</h2>
+                <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4" style={{ color: '#3a7e44' }}>About Poornima Institute of Engineering and Technology (PIET)</h2>
                 <p className="text-justify leading-relaxed">
                   Poornima Institute of Engineering and Technology (PIET) is a premier
                   institution in engineering education, established in the academic year
