@@ -260,7 +260,7 @@ const Home = () => {
                   </h3>
                 </div>
               </div>
-              
+
               <div className="group relative overflow-hidden rounded-2xl shadow-2xl bg-gradient-to-br from-white to-gray-50 border border-gray-200 hover:shadow-3xl transition-all duration-700 ease-out">
                 <div className="absolute inset-0 bg-gradient-to-br from-secondary-500/10 to-primary-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative p-2 sm:p-3">
@@ -430,7 +430,7 @@ const Home = () => {
                 <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4" style={{ color: '#3a7e44' }}>Central Library, PIET</h2>
                 <div className="space-y-4">
                   <p className="text-justify leading-relaxed">
-                  The PIET Central Library is a fully computerized and technology-enabled knowledge hub equipped with TCS-iON Library Management Software, an integrated Gate Entry Management System, and Bar-Code Technology for smooth and efficient circulation services. A user-friendly Web OPAC facility is also available, allowing faculty and students to search and access the library&apos;s collection and services with ease. Designed with a systematic approach, the library integrates state-of-the-art infrastructure, advanced digital resources, and a rich collection of academic and technical materials to support the teaching, learning, and research needs of the institute. To ensure safety and efficiency, the entire library is monitored by CCTV surveillance and secured with modern fire safety systems. Committed to excellence, the library provides innovative, user-centered services in a comfortable open-stack environment, maintaining its vital role in the academic and research ecosystem of PIET.
+                    The PIET Central Library is a fully computerized and technology-enabled knowledge hub equipped with TCS-iON Library Management Software, an integrated Gate Entry Management System, and Bar-Code Technology for smooth and efficient circulation services. A user-friendly Web OPAC facility is also available, allowing faculty and students to search and access the library&apos;s collection and services with ease. Designed with a systematic approach, the library integrates state-of-the-art infrastructure, advanced digital resources, and a rich collection of academic and technical materials to support the teaching, learning, and research needs of the institute. To ensure safety and efficiency, the entire library is monitored by CCTV surveillance and secured with modern fire safety systems. Committed to excellence, the library provides innovative, user-centered services in a comfortable open-stack environment, maintaining its vital role in the academic and research ecosystem of PIET.
                   </p>
                 </div>
               </div>
@@ -471,7 +471,7 @@ const Home = () => {
 
         {/* Statistics Section */}
         {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 my-8 sm:my-12"> */}
-          {/* {counterData.map((item, index) => (
+        {/* {counterData.map((item, index) => (
             <div key={index}
               className="bg-background-primary rounded-xl shadow-md p-4 sm:p-6 text-center transform hover:scale-105 transition-all duration-300">
               <AnimatedNumbers
