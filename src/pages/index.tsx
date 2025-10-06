@@ -441,9 +441,9 @@ const Home = () => {
                 <Image
                   src="/library.jpeg"
                   alt="PIET Central Library facilities"
-                  width={600}
-                  height={300}
-                  className="transform hover:scale-105 transition-transform duration-300"
+                  width={400}
+                  height={500}
+                  className="transform hover:scale-105 transition-transform duration-300 w-full h-auto max-h-[500px] object-contain"
                 />
               </div>
             </div>
