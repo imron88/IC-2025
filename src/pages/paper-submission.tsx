@@ -92,7 +92,7 @@ function PaperSubmission() {
           </h2>
           <div className="flex flex-col space-y-4 sm:space-y-5">
             <Link
-              href="https://cmt3.research.microsoft.com/ICSICST2026/Submission/Index"
+              href="https://cmt3.research.microsoft.com/ICIDLHV2026"
               className="inline-flex items-center px-5 sm:px-7 py-3 sm:py-4 bg-primary-600 text-white text-sm sm:text-base font-medium rounded-xl hover:bg-primary-700 transition-all duration-300 shadow-md hover:shadow-lg w-fit"
             >
               <svg
