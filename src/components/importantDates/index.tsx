@@ -44,15 +44,15 @@ export default function ImportantDates() {
       </div>
       <div
         className={
-          "w-full overflow-x-auto rounded-b-md bg-secondary-100 p-4 scrollbar-thin scrollbar-track-secondary-200 scrollbar-thumb-secondary-400 scrollbar-thumb-rounded-md"
+          "w-full rounded-b-md bg-secondary-100 p-4"
         }
       >
-        {/* Horizontal layout for important dates */}
-        <div className="flex space-x-6 w-full">
+        {/* Responsive layout for important dates */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {impDateData.map((item, index) => (
             <div key={index} className="flex-shrink-0">
               <div
-                className={`flex flex-col items-start space-y-2 ${item.isImportant ? "bg-accent-100 p-4 rounded-md" : ""
+                className={`flex flex-col items-start space-y-2 h-full ${item.isImportant ? "bg-accent-100 p-4 rounded-md" : "p-4"
                   }`}
               >
                 <div>
@@ -76,27 +76,30 @@ export default function ImportantDates() {
                   </p>
                 </div>
 
-                {index === 0 && (
-                  <div
-                    className={
-                      "rounded-full bg-accent-500 bg-opacity-20 font-semibold"
-                    }
-                  >
-                  </div>
-                )}
-                {item.isImportant && (
-                  <div className={"flex items-center justify-center"}>
+                <div className="mt-auto pt-2 flex space-x-2">
+                  {index === 0 && (
                     <div
                       className={
-                        "rounded-full bg-primary-600 bg-opacity-20 font-semibold"
+                        "rounded-full bg-accent-500 bg-opacity-20 font-semibold"
                       }
                     >
-                      <p className={"px-2 py-0.5 text-xs text-primary-700"}>
-                        Important
-                      </p>
+                      <p className={"px-2 py-0.5 text-xs text-accent-700"}>New</p>
                     </div>
-                  </div>
-                )}
+                  )}
+                  {item.isImportant && (
+                    <div className={"flex items-center justify-center"}>
+                      <div
+                        className={
+                          "rounded-full bg-primary-600 bg-opacity-20 font-semibold"
+                        }
+                      >
+                        <p className={"px-2 py-0.5 text-xs text-primary-700"}>
+                          Important
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           ))}
