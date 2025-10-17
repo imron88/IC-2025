@@ -47,11 +47,12 @@ export default function ImportantDates() {
           "w-full overflow-x-auto rounded-b-md bg-secondary-100 p-4 scrollbar-thin scrollbar-track-secondary-200 scrollbar-thumb-secondary-400 scrollbar-thumb-rounded-md lg:max-h-80 lg:max-w-sm lg:overflow-y-auto"
         }
       >
-        {impDateData.map((item, index) => {
-          return (
-            <div key={index} className={``}>
+        {/* Horizontal layout for important dates */}
+        <div className="flex space-x-6">
+          {impDateData.map((item, index) => (
+            <div key={index} className="flex-shrink-0">
               <div
-                className={`flex items-start space-x-2 ${item.isImportant ? "-mx-4 -my-5 bg-accent-100 p-4" : ""
+                className={`flex flex-col items-start space-y-2 ${item.isImportant ? "bg-accent-100 p-4 rounded-md" : ""
                   }`}
               >
                 <div>
@@ -85,10 +86,10 @@ export default function ImportantDates() {
                   </div>
                 )}
                 {item.isImportant && (
-                  <div className={"flex items-center justify-center space-x-2"}>
+                  <div className={"flex items-center justify-center"}>
                     <div
                       className={
-                        "mt-1 rounded-full bg-primary-600 bg-opacity-20 font-semibold"
+                        "rounded-full bg-primary-600 bg-opacity-20 font-semibold"
                       }
                     >
                       <p className={"px-2 py-0.5 text-xs text-primary-700"}>
@@ -98,17 +99,9 @@ export default function ImportantDates() {
                   </div>
                 )}
               </div>
-              {index !== impDateData.length - 1 && (
-                <hr
-                  className={`my-5 h-px border-0 bg-secondary-300 dark:bg-secondary-400 ${item.isImportant && impDateData[index + 1].isImportant
-                    ? "bg-accent-300"
-                    : ""
-                    }`}
-                />
-              )}
             </div>
-          );
-        })}
+          ))}
+        </div>
         {impDateData.length == 0 && (
           <>
             <h3>No Dates Announced Yet</h3>
