@@ -12,11 +12,7 @@ import {
   RiPhoneFill,
   RiTwitterFill,
 } from "react-icons/ri";
-import ImportantDates from "../components/importantDates";
-import ImportantDownloads from "../components/importantDownloads";
 import React, { useEffect, useState } from "react";
-import ImportantMessage from "@/components/importantMessage";
-import Button from "@/components/button";
 import Link from "next/link";
 import { speakers } from "@/data/speakers";
 
@@ -24,10 +20,7 @@ import dynamic from "next/dynamic";
 import Carousel from "framer-motion-carousel";
 import Image from "next/image";
 import axios from "axios";
-import InaugurationPdf from "@/components/inaugurationPdf";
-// import EntryModal from "@/components/entryModal";
 import Sponsored from "@/components/sponsored";
-import Schedule from "@/components/schedule";
 
 const AnimatedNumbers = dynamic(import("react-animated-numbers"), {
   ssr: false,
