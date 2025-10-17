@@ -82,7 +82,6 @@ export default function ImportantDates() {
                       "rounded-full bg-accent-500 bg-opacity-20 font-semibold"
                     }
                   >
-                    <p className={"px-2 py-0.5 text-xs text-accent-700"}>New</p>
                   </div>
                 )}
                 {item.isImportant && (
