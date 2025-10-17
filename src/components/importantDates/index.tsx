@@ -37,18 +37,18 @@ export default function ImportantDates() {
     <div className={"mx-auto w-full"}>
       <div
         className={
-          "lg:min-w-lg mt-5 w-full rounded-t-md border-l-4 border-primary-500 bg-secondary-200 p-4 lg:max-w-sm"
+          "mt-5 w-full rounded-t-md border-l-4 border-primary-500 bg-secondary-200 p-4"
         }
       >
         <p className={"text-lg font-semibold text-text-primary"}>Important Dates</p>
       </div>
       <div
         className={
-          "w-full overflow-x-auto rounded-b-md bg-secondary-100 p-4 scrollbar-thin scrollbar-track-secondary-200 scrollbar-thumb-secondary-400 scrollbar-thumb-rounded-md lg:max-h-80 lg:max-w-sm lg:overflow-y-auto"
+          "w-full overflow-x-auto rounded-b-md bg-secondary-100 p-4 scrollbar-thin scrollbar-track-secondary-200 scrollbar-thumb-secondary-400 scrollbar-thumb-rounded-md"
         }
       >
         {/* Horizontal layout for important dates */}
-        <div className="flex space-x-6">
+        <div className="flex space-x-6 w-full">
           {impDateData.map((item, index) => (
             <div key={index} className="flex-shrink-0">
               <div

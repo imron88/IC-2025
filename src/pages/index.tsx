@@ -127,6 +127,9 @@ const Home = () => {
 
       {/* Hero Section */}
       <main className="bg-gradient-to-b from-background-primary to-white px-2 sm:px-4 lg:px-6 xl:px-8">
+        <div className="m-10 pt-2">
+        <ImportantDates />
+        </div>
         <div className="grid grid-cols-1 lg:grid-cols-5 items-center gap-4 sm:gap-6 lg:gap-8 py-4 sm:py-6 lg:py-8">
           <div className="col-span-full lg:col-span-2 space-y-3 sm:space-y-4 lg:space-y-6">
             <div className="flex items-center space-x-2 bg-secondary-100 px-3 sm:px-4 py-2 rounded-full w-fit shadow-sm">
