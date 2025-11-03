@@ -284,7 +284,7 @@ const Home = () => {
             <div className="absolute top-0 right-0 w-12 sm:w-16 lg:w-20 h-12 sm:h-16 lg:h-20 bg-primary-100 rounded-full -translate-y-6 sm:-translate-y-8 lg:-translate-y-10 translate-x-6 sm:translate-x-8 lg:translate-x-10 opacity-50"></div>
             <div className="absolute bottom-0 left-0 w-10 sm:w-12 lg:w-16 h-10 sm:h-12 lg:h-16 bg-secondary-100 rounded-full translate-y-5 sm:translate-y-6 lg:translate-y-8 -translate-x-5 sm:-translate-x-6 lg:-translate-x-8 opacity-50"></div>
 
-            <div className="relative z-10">
+            {/* <div className="relative z-10">
               <div className="text-center mb-4 sm:mb-6">
                 <h2 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent">
                   In Collaboration With
@@ -292,54 +292,8 @@ const Home = () => {
                 <div className="w-16 sm:w-20 lg:w-24 h-0.5 sm:h-1 bg-gradient-to-r from-primary-500 to-secondary-500 mx-auto rounded-full"></div>
               </div>
 
-              <div className="bg-white/80 backdrop-blur-sm rounded-xl p-3 sm:p-4 shadow-inner border border-gray-50">
-                <div className="flex h-[200px] sm:h-[240px] lg:h-[280px] w-full overflow-hidden rounded-lg justify-center">
-                  <Carousel
-                    autoPlay={true}
-                    interval={4000}
-                    loop={true}
-                    renderArrowLeft={() => null}
-                    renderArrowRight={() => null}
-                    renderDots={({ setActiveIndex, activeIndex }) => {
-                      return (
-                        <div className="absolute bottom-2 sm:bottom-4 left-0 right-0 flex items-center justify-center gap-1.5 sm:gap-2">
-                          {logoImages.map((_, index) => (
-                            <button
-                              key={index}
-                              onClick={() => setActiveIndex(index)}
-                              className={`h-2 sm:h-3 transition-all duration-300 rounded-full
-                                ${index === activeIndex
-                                  ? 'bg-primary-500 w-6 sm:w-8 shadow-lg'
-                                  : 'bg-white/60 w-2 sm:w-3 hover:bg-white/80 hover:w-3 sm:hover:w-4'}`}
-                              aria-label={`Go to collaboration slide ${index + 1}`}
-                            />
-                          ))}
-                        </div>
-                      );
-                    }}
-                  >
-                    {logoImages.map((image, index) => (
-                      <div
-                        key={index}
-                        className="flex h-full w-full items-center justify-center p-4 sm:p-6 lg:p-8"
-                      >
-                        <div className="relative group">
-                          <div className="absolute inset-0 bg-gradient-to-r from-primary-200 to-secondary-200 rounded-xl blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
-                          <Image
-                            height={300}
-                            width={400}
-                            draggable={false}
-                            className="relative max-h-[160px] sm:max-h-[200px] lg:max-h-[240px] w-auto object-contain drop-shadow-xl transition-all duration-500 group-hover:scale-110 group-hover:drop-shadow-2xl rounded-lg"
-                            src={image.image}
-                            alt={image.alt || "Publication Partner Logo"}
-                          />
-                        </div>
-                      </div>
-                    ))}
-                  </Carousel>
-                </div>
-              </div>
-            </div>
+            
+            </div> */}
           </div>
         </div>
 
