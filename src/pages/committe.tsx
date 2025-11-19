@@ -52,7 +52,7 @@ function Committe() {
       designation: "Associate Professor, PIET",
     },
     {
-      name: "Mr. Nitin Mukesh Mathur",
+      name: "Dr. Nitin Mukesh Mathur",
       designation: "Asstt Professor, PIET",
     },
   ];
