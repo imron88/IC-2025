@@ -1,7 +1,7 @@
 export const speakers = [
     {
         "name": "Dr. Labibah Zain",
-        "designation": "Professor&Head, Department, Library & Information Science And University Librarian, UNI Sunan Kalijaga Yogyakarta, Indonesia.",
+        "designation": "MLIS, Associate Professor, UIN Sunan Kalijaga Yogyakarta Indonesia",
         "image": "/gallery/keynote_speakers/labibah.jpeg",
         "id": "1",
         "national": false
