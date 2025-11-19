@@ -18,30 +18,30 @@ function Committe() {
       designation: "Registrar & Chief Proctor, PIET",
     },
     {
-      name: "Dr. Amit Shrivastav",
+      name: "Prof. (Dr) Amit Shrivastav ",
       designation: "CoE, PIET",
     },
     {
-      name: "Dr. Mukesh Chandra",
+      name: "Prof.( Dr) Mukesh Chandra",
       designation: "Co-ordinators, IQAC PIET",
     },
     {
-      name: "Dr. Anil Kumar",
+      name: "Prof.(Dr.) Anil Kumar ",
       designation: "HoD, CSE, PIET",
     },
     {
-      name: "Dr. Budesh Kanwar",
+      name: "Prof. (Dr) Budesh Kanwar",
       designation: "HoD, AI & DS PIET",
     },
     {
-      name: "Dr. Payal Bansal",
+      name: "Prof (Dr.) Payal Bansal ",
       designation: "HoD, IoT, PIET",
     },
   ];
 
   const conferenceChair = [
     {
-      name: "Dr. Sama Jain",
+      name: "Prof. (Dr.) Sama Jain",
       designation: "HoD, Department of Applied Science, PIET",
     },
   ];
