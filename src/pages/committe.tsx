@@ -73,32 +73,32 @@ function Committe() {
 
   const organizingCommittee = [
     {
-      name: "Dr. Prince Dawar",
-      designation: "Assoc. Professor, Humanities",
-    },
-    {
-      name: "Dr. Mahak Bhatia",
-      designation: "Assistant Professor",
+      name: "Dr. Price Dawar",
+      designation: "Associate Professor, PIET",
     },
     {
       name: "Dr. Neetu Sharma",
-      designation: "Assistant Professor",
-    },
-    {
-      name: "Mr. Mukul Nama",
-      designation: "Assistant Professor",
+      designation: "Associate Professor, PIET",
     },
     {
       name: "Mr. Naveen Porwal",
-      designation: "Assistant Professor",
-    },
-    {
-      name: "Ms. Garima Kachhara",
-      designation: "Assistant Professor",
+      designation: "Assistant Professor, PIET",
     },
     {
       name: "Ms. Rimjhim Jain",
-      designation: "Assistant Professor",
+      designation: "Assistant Professor, PIET",
+    },
+    {
+      name: "Dr. Mahak Bhatia",
+      designation: "Assistant Professor, PIET",
+    },
+    {
+      name: "Mr. Mukul Nama",
+      designation: "Assistant Professor, PIET",
+    },
+    {
+      name: "Ms. Garima Kachhara",
+      designation: "Assistant Professor, PIET",
     },
     {
       name: "Mr. Ashok Sharma",
