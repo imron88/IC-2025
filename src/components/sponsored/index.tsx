@@ -14,9 +14,9 @@ function Sponsored() {
       alt: "Scopus Logo"
     },
     {
-      image: "/iste.jpg",
-      name: "Indian Society for Technical Education",
-      alt: "ISTE Logo"
+      image: "/collnet.png",
+      name: "Scopus Indexed Call NET Journal Publication",
+      alt: "CollNet Logo"
     },
   ];
 
