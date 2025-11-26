@@ -4,6 +4,16 @@ import Image from "next/image";
 function Sponsored() {
   const sponsors = [
     {
+      image: "/peter.jpeg",
+      name: "Indian Society for Technical Education",
+      alt: "ISTE Logo"
+    },
+    {
+      image: "/iste.jpg",
+      name: "Indian Society for Technical Education",
+      alt: "ISTE Logo"
+    },
+    {
       image: "/iste.jpg",
       name: "Indian Society for Technical Education",
       alt: "ISTE Logo"
@@ -18,7 +28,7 @@ function Sponsored() {
             Our Partners
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-text-primary mt-2 mb-3 sm:mb-4">
-            Technically Co-Sponsored by
+            Publishing Partners
           </h2>
           <div className="h-1 w-16 sm:w-24 bg-primary-600 mx-auto rounded-full"></div>
         </div>
