@@ -73,7 +73,7 @@ function Committe() {
 
   const organizingCommittee = [
     {
-      name: "Dr. Price Dawar",
+      name: "Dr. Prince Dawar",
       designation: "Associate Professor, PIET",
     },
     {
