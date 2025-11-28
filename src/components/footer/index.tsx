@@ -191,7 +191,7 @@ const Footer = () => {
             <p className="text-xs sm:text-sm text-secondary-200 mt-1">
               Created with ❤️ by{" "}
               {[
-                { name: "Ronak", href: "https://github.com/Ronak282005" }
+                { name: "Ronak", href: "https://github.com/imron88" }
               ].map((dev, index) => (
                 <React.Fragment key={dev.name}>
                   <a
