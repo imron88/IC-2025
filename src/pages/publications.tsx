@@ -25,12 +25,9 @@ function Publications() {
             <div>
               <div className="space-y-2 sm:space-y-3">
                 {[
-                  // "AIPCP* Scopus Indexed Conference Proceedings",
-                  // "CRC Press Conference Proceedings which shall be sent for Indexing after publication",
                   "WoS COLLNET Journal",
                   "SCOPUS Indexed PETER LANG Academic Publication",
                   "UGC Care listed ISTE Journal"
-                  // " For UG/PG Authors, only extended papers followed by blind review will be considered for publication.",
                 ].map((item, index) => (
                   <div key={index} className="flex items-start space-x-2 sm:space-x-3">
                     <div className="mt-2 h-1.5 w-1.5 sm:h-2 sm:w-2 rounded-full bg-primary-500 flex-shrink-0" />
