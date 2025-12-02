@@ -168,7 +168,7 @@ const Footer = () => {
               src="/pietbg.jpg"
               className="w-full object-contain filter drop-shadow-lg"
               alt="College Achievements and Ratings"
-            />
+            />  
           </div>
         </div> */}
 
