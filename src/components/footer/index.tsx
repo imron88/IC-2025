@@ -160,7 +160,7 @@ const Footer = () => {
         </div>
 
         {/* College Achievements - Full Width */}
-        <div className="mt-6 mb-8">
+        {/* <div className="mt-6 mb-8">
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 sm:p-4">
             <Image
               width={1200}
@@ -170,7 +170,7 @@ const Footer = () => {
               alt="College Achievements and Ratings"
             />
           </div>
-        </div>
+        </div> */}
 
         {/* Divider with gradient */}
         <div className="relative my-6 sm:my-8">
