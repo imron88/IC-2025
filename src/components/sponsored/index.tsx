@@ -13,6 +13,11 @@ function Sponsored() {
       name: "WoS Indexed COLLNET Journal Publication",
       alt: "CollNet Logo"
     },
+    {
+      image: "/iste.jpg",
+      name: "Indian Society for Technical Education",
+      alt: "ISTE Logo"
+    },
   ];
 
   return (
