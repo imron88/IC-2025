@@ -5,7 +5,7 @@ function Sponsored() {
   const sponsors = [
     {
       image: "/peter.png",
-      name: "Scopus Indexed Procedding Peter Lang Academic Publication",
+      name: "*Scopus Indexed Procedding Peter Lang Academic Publication*",
       alt: "PETER LANG Logo"
     },
     {
