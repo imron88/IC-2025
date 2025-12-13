@@ -53,13 +53,18 @@ const Register = () => {
                   {
                     category: "Attendee",
                     fee: "500"
+                  },
+                  {
+                    category: "Foreign Participants",
+                    fee: "500"
                   }
                 ].map((row, index) => (
                   <tr key={index} className="bg-white border-b hover:bg-secondary-50">
                     <th scope="row" className="px-3 sm:px-4 lg:px-6 py-3 sm:py-4 font-medium text-text-primary">
                       {row.category}
                     </th>
-                    <td className="px-3 sm:px-4 lg:px-6 py-3 sm:py-4 text-text-secondary">INR {row.fee}</td>
+                    {row.category == "Foreign Participants" ? <td className="px-3 sm:px-4 lg:px-6 py-3 sm:py-4 text-text-secondary">USD {row.fee}</td> : <td className="px-3 sm:px-4 lg:px-6 py-3 sm:py-4 text-text-secondary">INR {row.fee}</td>}
+                    
                   </tr>
                 ))}
               </tbody>
