@@ -56,7 +56,7 @@ const Register = () => {
                   },
                   {
                     category: "Foreign Participants",
-                    fee: "500"
+                    fee: "50"
                   }
                 ].map((row, index) => (
                   <tr key={index} className="bg-white border-b hover:bg-secondary-50">
