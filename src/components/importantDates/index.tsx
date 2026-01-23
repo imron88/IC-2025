@@ -11,14 +11,14 @@ interface ImportantDate {
 const impDateData: ImportantDate[] = [
   {
     title: "Paper Submission Deadline",
-    date: "10 January 2026",
+    date: "31 January 2026",
     subtitle: "Paper Submission Deadline",
     isImportant: true,
     enabled: true,
   },
   {
     title: "Notification of Acceptance",
-    date: "20 January 2026",
+    date: "05 February 2026",
     subtitle: "Notification of Acceptance",
     isImportant: true,
     enabled: true,
@@ -26,7 +26,7 @@ const impDateData: ImportantDate[] = [
   {
     title: "Camera-Ready Paper Submission",
     subtitle: "Camera-Ready Paper Submission",
-    date: "3 Feb., 2026",
+    date: "15 February 2026",
     isImportant: true,
     enabled: true,
   },
